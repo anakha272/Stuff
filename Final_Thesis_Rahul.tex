@@ -15,6 +15,7 @@
 \usepackage{hhline}
 \usepackage{url}
 \usepackage{verbatim}
+\usepackage{pdfpages}
 \usepackage{hyperref} % see the file hyperref.cfg for options
 %\usepackage{indentfirst} % I find it ugly if the first paragraph is indented
 \usepackage{footmisc} % provides \footref and \mpfootnotemark commands
@@ -140,10 +141,14 @@
 \pagenumbering{arabic}
 
 \chapter{Introduction} \label{chap:intro}
-
+\input{Ch1/Ch1.tex}
 
 \chapter{Identification of Warm Debris Disks} \label{chap:iddisks}
 \input{Ch2.tex}
+\clearpage
+\setboolean{@twoside}{false}
+\includepdf[pages=-,offset=75 -75]{WISEPaper_PMH14.pdf}
+
 
 \chapter{Confirming Excesses Through Weighted Combination of Colors}\label{chap:confirm}
 
