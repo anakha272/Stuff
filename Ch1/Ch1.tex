@@ -28,21 +28,18 @@
   
     \subsection{Detecting Circumstellar Dust}\label{sec:excess_detection}
 
-        \subsection{Typical Circumstellar Dust Grain Characteristics}            
+        \subsection{Dust Grain Characteristics}            
             
-        \textbf{composition and reference to later sections of thigns foundabsorption in uv, optical and near-ir (reference)}
-        
-        
+        From studies (\textbf{reference to studies}) we know that the dust in a circumstellar dust grains can be composed of macroscopic particles, nominally $<100$\micron in size and heterogeneously composed of various minerals, silicates, other dielectric and refractory particles as well as volatiles compounds (e.g., ice, Carbon Monoxide). 
                     
-        Circumstellar will be basked in the radiation field of its host star, and as a result will both scatter and absorb the radiation. Light at optical and near-IR wavelengths will be scattered as per the Rayleigh criterion. However, differentiating scattered versus stellar radiation becomes difficult since main-sequence stars at $T_\star>3000$~K have peak emission in the optical and near-IR ($0.4--2.5$\micron), thus increasing the contrast between scattered and stellar light. Re-emitted thermal emission is much easier to detect, since the peak emission occurs at mid and far-IR wavelengths, regimes with decreased stellar radiation. Therefore, the rest of this section deals with identification of circumstellar dust via its thermal emission.  
+        Circumstellar dust immersed in the radiation field of its host star, will both scatter and absorb incoming radiation. Though most types of grains are effective scaterers in the optical and near-IR (see \textbf{\S~section on resolved imaging}), a tiny fraction of that light is absorbed and aids in heating the dust,\textbf{need to redo this section}.
         
+        However, differentiating scattered versus stellar radiation becomes difficult since main-sequence stars at $T_\star>3000$~K have peak emission in the optical and near-IR ($0.4--2.5$\micron), thus increasing the contrast between scattered and stellar light. Re-emitted thermal emission is much easier to detect, since the peak emission occurs at mid and far-IR wavelengths, regimes with decreased stellar radiation. Therefore, the rest of this section deals with identification of circumstellar dust via its thermal emission.  
         
-        \textbf{When speaking of dust in this thesis, I am mainly referring to particles nominally $<100$\micron in size. These macroscopic particles may be heterogeneously composed of various minerals, silicates, dielectric and refractory particles, as well as volatiles (e.g., water, hydrocarbons).  maybe move this to section when collissions occur?}
         
         \subsubsection{Physics of Grain-Radiation Interaction}            
             
-            Small dust grains, on the order of tens of microns, are responsible for the the infrared excesses discussed in \S~\ref{sec:1stdisk_iras}. For the remainder of this thesis, I assume that the dust grains are in thermal equilibrium at any given distance with the stellar radiation field. % I make this simplification because the data that I work with can be explained using this simplified model and do not require additional complexity. 
-            For grains of size $a$ and at a distance $r_D$ from the star, the energy the star receives is conserved with the amount of energy the star radiates. I define the energy absorbed $E_{a}$ and energy emitted $E_{r}$ by the dust grain to be
+            Small dust grains, on the order of tens of microns, are responsible for the the infrared excesses discussed in \S~\ref{sec:1stdisk_iras}. For the remainder of this thesis, I assume that the dust grains are in thermal equilibrium at any given distance with the stellar radiation field. For grains of size $a$ and at a distance $r_D$ from the star, the energy the star receives is conserved with the amount of energy the star radiates. I define the energy absorbed $E_{abs}$ and energy emitted $E_{r}$ by the dust grain to be
             
             \begin{equation}\label{eq:energy_absorbed}
             E_{abs} = \pi \left(\frac{R_\star}{r_D}\right)^2 \int_0^\infty \pi a^2 B(\lambda,T_\star) Q_{abs}(a,\lambda) d\lambda
@@ -62,17 +59,25 @@
             
             Solving for the dust temperature $T_D$ yields an analytic power series, the solution to which can be found in \citet{Backman1993}.  The power series solution can only be derived under the assumption that the absorption and emission coefficient are...
             
-            The equilibrium temperature can vary as it depends on the composition and size of the grain. Large blackbody grains that are efficient emitters and absorbers, hence will be cooler than smaller grains that are inefficient emitters at the same distance from the star. For blackbody grains, Equation~\ref{eq:conserve_energy} produces
+            The equilibrium temperature can vary as it depends on the composition and size of the grain. Large blackbody grains that are efficient emitters and absorbers will have equilibrium temperatures according to the following equation 
+            
             
             \begin{equation}\label{eq:blackbody_temp}
-            T_D = 278 \frac{\left(L_\star/L_\odot \right)^{1/4}}{\sqrt{r_D}}\enspace [K] , 
+            T_D = 278 \frac{\left(L_\star/L_\odot \right)^{1/4}}{\sqrt{r_D}}\enspace [K]. 
             \end{equation}
+            
+        Figure~\textbf{Figure of surface plot} shows how Equation~\ref{eq:blackbody_temp} varies as a function of both stellar luminosity and stellocentric distance. In the majority of cases, grains are are heated to temperatures between 50--300~K. Temperatures above this are rarely found as these grains require close proximity to the star, and are unstable in their orbit. Smaller grains are inefficient emitters and will tend to be hotter than blackbody grains at the same distance from the star. \textbf{maybe put some equation here for it}.
             
            
             
         \subsubsection{Infrared Excesses to Detect Dust}            
             
-        In essence, dust can either be detected from scattered light emission at shorter near-IR wavelengths or from thermal reprocessing at longer mid and far-IR wavelengths. However, to measure any emission from the dust, the amoutn of stellar emission needs to be accuratelry predicted. The majority of dust is detected through unresolved emission using either spectroscopic or photometric imaging techniques. To correctly attribute any observed emission to dust, accurately predicting the stellar emission and subsequent subtraction is key.  Dust at temperatures $T_D<300$~K will have peak emission at $\lambda>9$\micron. Short-ward of that, contrast with the stellar photosphere makes it difficult to 
+        The dust temperatures shown in Figure~\textbf{figure of surface plot} indicate that the emission from the grains occurs mainly in the infrared wavelengths and follows to first approximation that of a blackbody $B(\lambda,T_D)$. The emission spectrum of grains that have emissivities which deviate from the blackbody approximation have a steeper curve beyond the peak wavelength of emission $\lambda_0$. In this case the dust SED is 
+        
+        Emissivities of grains deviating from a blackbody approximation have a 
+        
+        
+        However, to measure any emission from the dust, the amoutn of stellar emission needs to be accuratelry predicted. The majority of dust is detected through unresolved emission using either spectroscopic or photometric imaging techniques. To correctly attribute any observed emission to dust, accurately predicting the stellar emission and subsequent subtraction is key.  Dust at temperatures $T_D<300$~K will have peak emission at $\lambda>9$\micron. Short-ward of that, contrast with the stellar photosphere makes it difficult to 
             
             
             
