@@ -1,6 +1,6 @@
 \documentclass[phd,bottom,nosig]{usbthesis}
 %\includeonly{chapter1}
-
+\bibliographystyle{apj}
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage{bm}
@@ -17,10 +17,11 @@
 \usepackage{verbatim}
 \usepackage{pdfpages}
 \usepackage{hyperref} % see the file hyperref.cfg for options
+
 %\usepackage{indentfirst} % I find it ugly if the first paragraph is indented
 \usepackage{footmisc} % provides \footref and \mpfootnotemark commands
 \usepackage{xspace}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage{natbib}
 %\usepackage[nottoc]{tocbibind}
 %Make caption labels bold
 \usepackage[labelfont=bf]{caption}
@@ -177,21 +178,5 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliographystyle{apj}
-%\bibliographystyle{unsrtnat}
-%\bibliography{h-physrev}
-%\bibliographystyle{hunsrt}
-%\bibliographystyle{utphys}
-%\renewcommand{\baselinestretch}{1}
-%\normalsize
-%See http://www.winedt.com/tex.html
-%Included for Gather Purpose only:
-%input "C:\path\to\bibtex\file1.bib"
-%input "C:\path\to\bibtex\file2.bib"
-%\clearpage%
-%\phantomsection%
-
-%\addcontentsline{toc}{chapter}{\numberline{}{Bibliography}}%
-%\bibliography{test}
-
+\bibliography{DissertationReferences}
 \end{document}
