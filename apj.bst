@@ -444,46 +444,41 @@ INTEGERS { nameptr namesleft numnames }
 % Format bibliographical entries with the last name first.
 %
 FUNCTION {format.names}
-{ 's :=   
+{ 's :=
+  "" 't :=
   #1 'nameptr :=
   s num.names$ 'numnames :=
-% Check for "et al." condition.
-
-  numnames #8 >
-  { s nameptr 
-
-    "{vv~}{ll}{, f.}{, jj}"
-
-    format.name$
-
-    "," *
-
-
-    " et~al." * }
-  {
-    numnames 'namesleft :=
+  numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-
-      "{vv~}{ll}{, f.}{, jj}"
-
-      format.name$ 't :=
+      "{vv~}{ll}{, jj}{, f{.}.}"
+      format.name$
+      't :=
       nameptr #1 >
-        { namesleft #1 >
+        {
+          nameptr #1
+          #1 + =
+          numnames #3
+          > and
+            { "others" 't :=
+              #1 'namesleft := }
+            'skip$
+          if$
+          namesleft #1 >
             { ", " * t * }
-            { numnames #2 >
-	        {", " *}
-
-	        {", " *}
-
+            {
+              s nameptr "{ll}" format.name$ duplicate$ "others" =
+                { 't := }
+                { pop$ }
               if$
               t "others" =
-                { " et~al." * }
-                { 
-
-                  " \& "
-
-                  * t * }
+                {
+                  " et~al" *
+                }
+                {
+                  " and "
+                  * t *
+                }
               if$
             }
           if$
@@ -493,11 +488,8 @@ FUNCTION {format.names}
       nameptr #1 + 'nameptr :=
       namesleft #1 - 'namesleft :=
     }
-    while$
-  }
-  if$
-}   
- 
+  while$
+} 
 % Just last names.
 % If more than three authors, use et al.
 FUNCTION {my.full.label}
