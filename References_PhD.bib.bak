@@ -4111,6 +4111,26 @@
 	Formation}
 }
 
+@ARTICLE{RiekeAges2005,
+  author = {{Rieke}, G.~H. and {Su}, K.~Y.~L. and {Stansberry}, J.~A. and {Trilling},
+	D. and {Bryden}, G. and {Muzerolle}, J. and {White}, B. and {Gorlova},
+	N. and {Young}, E.~T. and {Beichman}, C.~A. and {Stapelfeldt}, K.~R.
+	and {Hines}, D.~C.},
+  title = {{Decay of Planetary Debris Disks}},
+  year = {2005},
+  volume = {620},
+  month = feb,
+  pages = {1010-1026},
+  doi = {10.1086/426937},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+  adsurl = {http://adsabs.harvard.edu/abs/2005ApJ...620.1010R},
+  journal = {\apj},
+  keywords = {Stars: Circumstellar Matter, Infrared: Stars, Stars: Planetary Systems:
+	Formation},
+  owner = {anakha272},
+  timestamp = {2015.01.16}
+}
+
 @ARTICLE{Rieke2004,
   author = {{Rieke}, G.~H. and {Young}, E.~T. and {Engelbracht}, C.~W. and {Kelly},
 	D.~M. and {Low}, F.~J. and {Haller}, E.~E. and {Beeman}, J.~W. and
