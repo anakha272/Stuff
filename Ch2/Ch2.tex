@@ -1,8 +1,8 @@
 \section{Limitation of Past Surveys}\label{sec:past_detection_context}
    
-   What is apparent from the plethora of debris disk studies over the last three decades is the differences in the reported incidence rate of excesses. Though there is a consensus within the community in terms of typical rates for a given spectral type at rough ages, the differences, even within these bins, cannot be ignored in the larger context of this thesis. 
+   What is apparent from the plethora of debris disk studies over the last three decades is the differences in the reported incidence rate of excesses. Though there is a consensus in terms of typical rates for a given spectral type at various stellar ages, the differences, even within these different bins, require further consideration.
    
-   There are a few reasons why these differences exist. The first is instrument sensitivity. Different instruments aboard these satellites are sensitive to a certain degree. A good review can be found in \citet{Wyatt2008}, where Dr. Wyatt describes the limiting fractional excess $R_{\lambda,\rm{lim}}$ above which a disk is detectable, typically calculated based on the limits of the faintest disk detected in the survey. Thus, equation 11 in \citet{Wyatt2008} defines the lowest fractional luminosity above which a disk is detectable such that
+   There are a few reasons why these differences exist. The first is instrument sensitivity. Different instruments aboard these satellites are sensitive to a certain degree. A good review can be found in \citet{Wyatt2008}, where Dr. Wyatt describes the limiting fractional excess $R_{\lambda,\rm{lim}}$ above which a disk is detectable, typically calculated based on the limits of the faintest disk detected in the survey. Thus, equation 11 in \citet{Wyatt2008} defines the lowest fractional luminosity above which a disk is detectable
    
    \begin{equation}\label{eq:detection_limits}
    f_{\rm{det}} = 6\times10^9 X_\lambda \frac{R_{\lambda,{\rm lim}}L_\star}{r^2 T_\star^4} \frac{B_\lambda(T_\star)}{B_\lambda(T_d)}. 
@@ -13,28 +13,25 @@
     %===================================================================
     \begin{figure}
     \centering
-    \begin{tabular}{cc}
-    \includegraphics[scale=0.2]{Ch2/Detection_limits_Kennedy} &
-    \includegraphics[scale=0.3]{Ch2/fd_vs_tbb_simple}
-    \end{tabular}
-    \caption[]{}
+    \includegraphics[scale=0.2]{Ch2/Detection_limits_Kennedy}
+    \caption[Sensitivity Limits of Cold Disk Surveys]{This plot shows the limiting fractional luminosity as a function of distance from the star based on data from the DEBRIS survey. Above these lines, 25\% of the stars in DEBRIS were detected by surveys conducted by \iras\, Spitzer/MIPS (24 and 70\micron) and Herschel/PACS (100 and 160\micron) \citep[Image credit: Grant Kennedy in][]{Matthews2014}}
     \label{fig:detection_limits}
     \end{figure}
     %===================================================================
     
    
-   The left panel of Figure~\ref{fig:detection_limits} shows the limiting fractional luminosity a few different surveys as a function of radius from the star. From IRAS to Herschel, improvements in both detector technology and an increase in mirror size have pushed the limits of detecting fainter and fainter dust populations. Hence, the increase of incidence rates from IRAS to Spitzer does not come as much of a surprise given that Spitzer is sensitive to fainter dust (cold or warm). Differences in incidence rates can also arise due to the threshold of an excess some studies may adopt compared to others. 
+   Figure~\ref{fig:detection_limits} shows the limiting fractional luminosity from a few different surveys as a function of radius from the star. From \iras\ to Herschel, improvements in both detector technology and an increase in mirror size have allowed for the detection of fainter and fainter dust populations. Hence, the increase of incidence rates from \iras\ to Spitzer does not come as much of a surprise given that Spitzer is sensitive to fainter dust (cold or warm). Differences in incidence rates can also arise due to the threshold of an excess some studies may adopt compared to others. 
    
-   As explained in \S~\ref{sec:excess_resolvedimaging}, the excess flux is measured from the measured IR flux subtracted from the photospheric flux in the IR, which is extrapolated from model fits to optical and near-IR flux measurements. Studies may determine the significance of an excess detection from this subtraction on a case by case basis, or from the statistical significance based on the distribution of a large survey. The former method can under or overestimate the excess if significant flux variations occur between the epoch of observations between the optical data and the IR data, while the latter technique may introduce large false-discovery rates \textbf{check this} as well as reduce the sensitivity of fainter disks for small samples in a survey. 
+   As explained in \S~\ref{sec:excess_resolvedimaging}, the excess flux is determined from the measured IR flux subtracted from the photospheric flux in the IR, which is extrapolated from model fits to optical and near-IR flux measurements. Studies may determine the significance of an excess detection from this subtraction on a case by case basis, or from the statistical significance based on the distribution of a large survey. The former method can under or overestimate the excess if significant flux variations occur between the epoch of observations between the optical data and the IR data, while the latter technique may introduce large false-discovery rates \textbf{check this} as well as reduce the sensitivity of fainter disks for small samples in a survey. 
    
-   Studies that used some of the more notable space based observatories like Herschel or Spitzer were limited to sample sizes of $\sim$500 stars, due to the pointed nature of the satellite. And although IRAS was an all-sky mission, it also produced a couple hundred excess sources. The study by \citet{Rhee2007} searched for excesses around tens of thousands of Hipparcos main-sequence stars, and produced roughly 50 new excesses, the majority of which were still cold disk detections. We have seen that cold dust is easier to detect due to the large contrast with the photosphere in the far-IR. The contrast becomes an issue in the mid-IR, where there are a relatively low number of warm dust detections.
+   Studies that used some of the more notable space based observatories like Herschel or Spitzer were limited to sample sizes of $\sim$500 stars, due to the pointed nature of the satellite. And although \iras\ was an all-sky mission, it also produced a couple hundred excess sources. The study by \citet{Rhee2007} searched for excesses around tens of thousands of Hipparcos main-sequence stars, and produced roughly 50 new excesses, the majority of which were still cold disk detections. We have seen that cold dust is easier to detect due to the large contrast with the photosphere in the far-IR. Low contrast becomes an issue in the mid-IR, where there are a relatively small number of warm dust detections.
    
-   The reason behind the overall low number of warm dust detections is because of the small coverage of very sensitive pointed satellites like Spitzer and Herschel, and the relatively low resolution and sensitivity of the last all-sky mission, IRAS, where the resolution of the IRAS beam was 30'' at 12\micron. Thus, to address the limitations presented, I now shift focus of this thesis to finding warm dust with the latest all-sky infrared mission: the Wide-Field Infrared Survey Explorer Spacecraft.
+   The small number of warm dust detections is due to the small coverage of very sensitive pointed satellites like Spitzer and Herschel, and the relatively low resolution and sensitivity of the last all-sky mission, \iras, where the resolution of the \iras\ beam was 30'' at 12\micron. Thus, to address these limitations, I now shift focus of this thesis to finding warm dust with the latest all-sky infrared mission: the Wide-Field Infrared Survey Explorer Spacecraft.
    
    
 \section{The Wide-Field Infrared Survey Explorer\\ Mission}\label{sec:wise_intro}
 
-    The success of the IRAS mission was one of the motivations for launching another new and improved infrared all-sky mission. The goals of the Wide-Field Infrared Survey Explorer mission \citep[WISE;][]{Wright2010} were to observe the entire sky at two near-IR and two mid-IR wavelengths, thus improving and complementing the achievements of IRAS. In this section, I discuss the details of the WISE mission. Data from the WISE survey constitutes the bulk of my thesis and in the the following section, I will summarize this space based mission, its purpose and the specifications and how its data products can be used to identify circumstellar dust.
+    The success of the \iras\ mission was one of the motivations for launching another new and improved infrared all-sky mission. The goals of the Wide-Field Infrared Survey Explorer mission \citep[WISE;][]{Wright2010} were to observe the entire sky at two near-IR and two mid-IR wavelengths, thus improving and complementing the achievements of \iras\. In this section, I discuss the details of the WISE mission. Analysis of data from the \WS\ survey constitutes the bulk of my thesis. In the following section, I will summarize the \WS\ mission, explain its purpose and technical specifications, and discuss how data from the mission can be used to identify circumstellar dust. 
    
 
     \subsection{Mission Overview}\label{sec:wise_overview}
@@ -49,13 +46,13 @@
     \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Ch2/wise_satellite}
-    \caption[]{}
+    \caption[\WS\ Satellite]{Illustration of the \WS\ satellite.}
     \label{fig:WISE_Satellite}
     \end{figure}
     %===================================================================
     
  
-    The mission was successful in scanning 99.99\% of the entire sky in the aforementioned IR bands. WISE's detector field-of-view is 47' on a side. During its continual orbit around the Earth, overlapping observation frames 11 second cadences were taken (8.8~s of integration). The overlap of frames, over multiple orbits, ensures greater depth of coverage. In a day, the satellite performs 15 orbits. Figure~\ref{fig:scan_plan} shows the overlapping frames as the satellite orbits the Earth. Further details of the entire mission can be found online\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/}} or in \citet{Wright2010}. 
+    The mission was successful in scanning 99.99\% of the entire sky in the aforementioned IR bands. WISE's detector field-of-view is 47' on a side. During its continual orbit around the Earth, overlapping observation frames 11 second cadences were taken (8.8~s of integration). The overlap of frames, over multiple orbits, ensures greater depth of coverage. In one day, the satellite performs 15 orbits. Figure~\ref{fig:scan_plan} shows the overlapping frames as the satellite orbits the Earth. Further details of the entire mission can be found online\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/}} or in \citet{Wright2010}. 
 
     %===================================================================
     %  WISE SCAN PLAN
@@ -63,7 +60,7 @@
     \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Ch2/wise_scan_plan}
-    \caption[]{}
+    \caption[\WS\ Sky Coverage]{\WS\ coverage evolution over many orbits of the satellite around Earth. Each frame is a cadence of 11~s, and subsequent observations provide overlapping regions between frames. Lighter to darker shades of gray indicate increasing depth of coverage. Image taken from \citet{Wright2010}.}
     \label{fig:wise_scan_plan}
     \end{figure}
     %===================================================================
@@ -72,39 +69,95 @@
    
    
     \subsection{WISE Bands}\label{sec:wise_bands}
-   
-   
-   The two near-IR channels image the sky at band centered wavelengths of 3.4\micron\ and 4.6\micron\ using HgCdTe arrays, each with 18\micron\ 1024 $\times$ 1024 pixels. Both of these detectors are cooled to 32~K. The mid-IR channel detectors image the sky at band centered wavelengths of 12\micron\ and 22\micron\ and are made from Si:As BIB arrays of the same structure as the near-IR channels. These arrays are cooled to a temperature of 8.2~K. For the remainder of this thesis, I will refer to each of these bands as $W1$ (3.4\micron), $W2$ (4.6\micron), $W3$ (12\micron) and $W4$ (22\micron). Figure~\ref{fig:wise_bands} shows the relative spectral response of each of the detectors. 
-   
+
     %===================================================================
     %  WISE BANDS
     %===================================================================
     \begin{figure}
     \centering
     \includegraphics[scale=0.5]{Ch2/wise_response}
-    \caption[]{}
+    \caption[\WS\ Bands]{Relative spectral response curves for all four \WS\ bands. Plot was taken from the WISE Explanatory Supplement.}
     \label{fig:wise_bands}
     \end{figure}
     %===================================================================
+   
+   
+   The two near-IR channels image the sky at band centered wavelengths of 3.4\micron\ and 4.6\micron\ using HgCdTe arrays, each with 18\micron\ 1024 $\times$ 1024 pixels. Both of these detectors are cooled to 32~K. The mid-IR channel detectors image the sky at band centered wavelengths of 12\micron\ and 22\micron\ and are made from Si:As BIB arrays of the same structure as the near-IR channels. These arrays are cooled to a temperature of 8.2~K. For the remainder of this thesis, I will refer to each of these bands as $W1$ (3.4\micron), $W2$ (4.6\micron), $W3$ (12\micron) and $W4$ (22\micron). Figure~\ref{fig:wise_bands} shows the relative spectral response of each of the detectors. 
+   
     
     
    
-    \subsection{WISE Data Products and the All-Sky Data Release}
-
+    \subsection{WISE Data Releases}
+\textbf{Mention saturation}
     The WISE mission has produced a number of different data releases. The first release, called the \textit{WISE Preliminary Release} was made public on April 14, 2011\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/prelim/preview.html}} and contained data that covered only 57\% of the sky. The next public release of WISE data was made on March 14, 2012. This data set was called the \textit{All-Sky Data Release}\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/}} and covered the entire sky in all four bands. After the cryostats were depleted, WISE began its ``warm'' mission, and only collected data in the two near-IR $W1$ and $W2$ bands. This commenced the Near-Earth Object WISE (NEOWISE) mission. A subsequent all-sky data release by WISE came on November 13, 2013 called the \textit{All-WISE Data Release}\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allwise/}}. For the work I present in the rest of this dissertation, I only use measurements from the \textit{All-Sky Data Release}, except in comparison with other release. 
     
     Since the WISE data is in the public domain, it can easily be accessed online. The online databases consists of measurements for over half a billion objects in all four bands. These measurements consist of photometric data for each band, as well as meta-data pertaining to the quality of the data product. The database also consists of Atlas images of the processed data and can be viewed at \url{http://irsa.ipac.caltech.edu/applications/wise/}. 
     
+    \subsection{Cautionary Tales of WISE Data}
+    
+        \subsubsection{Extended Source Contamination}
+        
+        
+        %===================================================================
+        %  2MASS CONTAMINATION
+        %===================================================================
+        \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{Ch2/extflg_2_HIP3293}
+        \caption[Contamination From \mass\ Extended Source.]{An example of a star contaminated due to a \mass\ extended source object. This $W4$ band image shows the star, HIP~3293, indicated by the blue circle, within the vicinity of a background extragalactic source. The photometry of this star is flagged with \textit{extflg}=2, indicating that it is within the isophotal footprint of this galaxy, and is likely to be contaminated.}
+        \label{fig:extflg_contamination}
+        \end{figure}
+        %===================================================================
+        
+    
+        \subsubsection{Saturated WISE Photometry}
+    
+        \subsubsection{Artificial Instrument Contamination}
+        
+        %===================================================================
+        %  CONFUSION FLAG CONTAMINATION
+        %===================================================================
+        \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{Ch2/ccflag_hhdd_HIP32362}
+        \caption[Contamination From Optical Articats]{\WS\ four band image centered on HIP~32362. The confusion flag for this star is \textit{ccflag=hhdd}. These flags, one character per band indicate that the source is real but is most likely contaminated by mostly halo (h) or from diffraction spikes (d) from a nearby bright star. Diffraction spikes and halo artifacts are marked by red circles and yellow squares, respectively.}
+        \label{fig:ccflag_contamination}
+        \end{figure}
+        %===================================================================
+        
+    
+        \subsubsection{Moon Contamination}
+        
+        %===================================================================
+        %  MOON FLAG CONTAMINATION
+        %===================================================================
+        \begin{figure}
+        %\centering
+        \begin{tabular}{cc}
+        \includegraphics[width=0.6\textwidth]{Ch2/moonflg_HIP114340_W3_88}&
+        \includegraphics[width=0.6\textwidth]{Ch2/moonflg_HIP114340_W3_88}
+        \end{tabular}
+        \caption[]{}
+        \label{fig:moonflag_contamination}
+        \end{figure}
+        %===================================================================
 
-
+        
+        \subsubsection{Internally Inconsistent Variability}
+    
+        \subsubsection{Internally Inconsistent Photometry}
+    
+    
+    
+    
+    
+    
+    
+    
 
     \subsection{Advantages Over Previous Debris Disk Surveys}
 
     As outlined in \S~\ref{sec:excess_resolvedimaging}, detection of an IR excess from a debris disk requires precise and accurate measurement of the photospheric flux. In other words, this boils down to a survey which is sensitive to low levels of dust emission. This is especially important when searching for warm dust as the contrast between the thermal dust and stellar photospheric emission is lowest. One also has to be able to discern whether the IR excess is associated with the star system. This in turn requires high resolution to remove sources of astrophysical confusion. In addition, the incidence rate of excesses established by the last few decades of debris disk studies have shown that unless the star is young, there is a low probability of detecting an excess. The number of young associations in the nearby Solar neighborhood is relatively low (reference and maybe a number). Hence surveying field stars for excesses requires a large sample size to detect a greater number of sources. 
-    
-    
-    IRAS' all-sky design made it ideal to to search for excesses around a large number of stars. And although it found a few hundred excesses, its successor --- WISE --- is capable of advancing this search. 
-    
     %===================================================================
     %  Mission Sensitivities
     %===================================================================
@@ -116,20 +169,85 @@
     \end{figure}
     %===================================================================
     
+
     
-    
-    
-    
+    \iras' all-sky design made it ideal to to search for excesses around a large number of stars. And though it found a few hundred excesses, its successor --- WISE --- is capable of advancing this search. This is due to two reasons. The first is that WISE is a more sensitive survey compared to \iras. \iras\ was sensitive down to $\sim$0.2~Jy in its 12 and 25\micron\ bands. In comparison, WISE is 160--200$\times$ more sensitive in its $W3$ and $W4$ bands. Figure~\ref{fig:flux_comparison} shows the absolute sensitivity of both \iras\ and WISE for each of their IR detectors. The second reason why WISE has the ability to outperform \iras\ in the mid-IR is due to WISE's relatively high resolution compared to \iras. WISE's angular resolution for $W1$--$W4$ is 6.1'', 6.4'', 6.5'', and 12'', respectively, with an astrometric accuracy of 0.2''. In comparison, the angular resolution of the 12\micron\ detector is 30'' but has a positional accuracy of 20''. Figure~\ref{fig:region_compare} shows the same patch of sky in \textbf{region in milky way} seen by \iras\ and WISE at 12\micron. The comparison images clearly show that with the superior angular resolution, WISE has the ability to identify a plethora of unconfused debris disks from their IR excesses. This is also reflected in the sheer number of point sources catalogued in the WISE All-Sky Database ($\sim$600,000,000), compared to those in the \iras\ database ($\sim$270,000). 
     
     %===================================================================
-    %  IRAS vs. WISE
+    %  \iras\ VS. WISE Images
     %===================================================================
     %\begin{figure}
     %\centering
-    %\includegraphics[scale=0.5]{Ch2/wise_response}
+    %\includegraphics[scale=0.5]{Ch2/region_compare}
     %\caption[]{}
-    %\label{fig:wise_bands}
+    %\label{fig:region_compare}
     %\end{figure}
     %===================================================================
     
     
+    
+    
+    %===================================================================
+    %  \iras\ VS. WISE VS SPITZER MIPS24 SENSITIVITY
+    %===================================================================
+    \begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{Ch2/fdd_vs_tbb}
+    \caption[]{}
+    \label{fig:sensitivity_all}
+    \end{figure}
+    %===================================================================
+
+    
+    
+    The size of the WISE All-Sky Database is also important because it provides an advantage over surveys that use Spitzer or Herschel to search for excesses. Figure~\ref{fig:sensitivity_all} compares the projected sensitivity of instruments on board WISE, Spitzer, and \iras\ in the mid-IR. While it is clear that WISE is able to detect fainter dust than \iras\ at similar wavelength bands, The Spitzer/MIPS and IRS instruments have been used to find even fainter dust populations. This is no surprise because Spitzer is a pointed survey, with higher angular resolution than WISE, and can hence increase its sensitivity to fainter dust through longer observing times. But, since pointed surveys can only observe a tiny fraction of the sky, the data products from an all-sky survey, like WISE, can search for excesses around stars which have never been observed. 
+    
+    
+    
+\section{Detecting Thermal Emission From Debris Disks with WISE}
+
+    \subsection{Advantages of WISE Color Excess}
+    
+    Most debris disks have been found from the subtraction of the measured IR flux from the modelled photospheric flux, as described in \S~\textbf{find appro. section}. An alternative to photospheric modelling of individual stars is to derive an estimate of the excess empirically by calculating star's ``color excess''. The astronomical magnitude system defines the color of a star by the logarithmic ratio of fluxes at two different wavelengths
+    
+    \begin{equation}\label{eq:color}
+    m_{\lambda_1} - m_{\lambda_2} = -2.5\log{F_{\lambda_1}/F_{\lambda_2}},
+    \end{equation}
+    
+    \noindent where $\lambda_1<\lambda_2$. For our purposes, we will assume that $\lambda_1$ is between $2-5$\micron\ and $\lambda_2>10$\micron. If we knew the ``photospheric color'', (i.e., color of the dust-free star) ${\left(m_{\lambda_1} - m_{\lambda_2}\right)}_\star$, then we can determine the color excess, by subtracting the photospheric color from the measured color ${\left(m_{\lambda_1} - m_{\lambda_2}\right)}_m$
+    
+    \begin{eqnarray}\label{eq:color_excess}
+    E\left[m_{\lambda_1} - m_{\lambda_2}\right] &=& {\left(m_{\lambda_1} - m_{\lambda_2}\right)}_m - {\left(m_{\lambda_1} - m_{\lambda_2}\right)}_\star \\ 
+    &=& {m_{\lambda_2}}_\star - {m_{\lambda_2}}_m,
+    \end{eqnarray}
+    
+    \noindent where we assume that ${m_{\lambda_1}}_\star = {m_{\lambda_1}}_m$, and that the photospheric color is estimated empirically from the average or median value of a large set of measurements. For photospheric colors, consistent with a Rayleigh-Jeans slope, $E\left[m_{\lambda_1} - m_{\lambda_2}\right]=0$. Thus, stars with excesses can be identified by positive, non-zero color excesses such that $E\left[m_{\lambda_1} - m_{\lambda_2}\right]>0$. 
+    
+    
+    Searching for excesses by using color excesses can be advantageous over searching for excesses from photospheric fitting. The latter technique can introduce inherent biases in measuring the ``hidden'' dust emission. The photospheric emission in the IR is estimated from fitting a set of grid models using photometric or spectroscopic data from observations at different epochs. Intrinsic stellar variability will offset any extrapolated flux in the IR, subsequently over or even underestimating the amount of IR excess flux. But more importantly, by using data from multiple epochs and different instruments, the relative systematic uncertainties between the flux measurements will reduce the signal of the dust emission one is trying to extract.
+    
+    However, if the photospheric extrapolation is done by fitting contemporaneously obtained data from the same instrument, the relative systematic uncertainties disappear. For example, \citet{Lawler2009} conducted a study that used contemporaneous Spitzer/IRS spectra. By using the shorter wavelength end of the spectra as an anchor for the photospheric emission, they were then able to extrapolate it to the relevant excess wavelengths. Most surveys are not afforded this luxury of simultaneous data in short and long wavelength observations, and hence SED fitting is the primary method. The difference in the flux of the detected excess between ``color excesses'' and ``photospheric fitting'' is small and only becomes relevant when searching for faint excesses ($f_d < 10^{-5}$--$10^{-7}$). Though when the goal is to attain greater sensitivity to solar system like dust ($f_d\sim10^{-7}$), the added sensitivity can go a long way.
+    
+    It is in this regime that WISE has the largest advantage. For the first time, WISE has afforded astronomers the ability to conduct an IR excess search of debris disks through photometric data obtained contemporaneously at photospheric and excess relevant wavelengths \textit{of the entire sky}. Thus, it only makes sense to take advantage of the properties of this data and search for IR excesses using the more sensitive color excess search technique. In this case, equation~\ref{eq:color_excess} will look like
+    
+    \begin{equation}\label{eq:wise_color_excess}
+    E\left[Wi - Wj\right] = {\left(Wi - Wj \right)}_m - {\left(Wi- Wj \right)}_\star , 
+    \end{equation}
+    
+    
+ \noindent where $Wi$ and $Wj$ are the WISE bands described in \S~\ref{sec:wise_bands}, such that $Wi$ = $W1$, $W2$, or $W3$ and $Wj$ = $W3$ or $W4$ with the constraint that $Wi<Wj$. The work that I will present in the rest of this thesis is based on the measurements defined in equation~\ref{eq:wise_color_excess}. By using the color excess technique in conjunction with the all-sky coverage data from WISE, I will not only be able to identify a large number of excesses but also gain sensitivity to fainter warm disks  around stars that were previously missed due to either lack of resolution or coverage. 
+    
+
+
+    
+\section{Previous \WS\ Debris Disk Studies}
+
+    The series of studies I will be presenting in the subsequent chapters are by no means the first or only studies that have searched for debris disks using data from \WS. Here, I will summarize the current literature of \WS\ studies to detect debris disks.
+    
+    Studies have used data from different data releases on a variety of different data sets to search for debris disks. In particular, a number of studies have searched for excesses around different sets of exoplanet populations to study the relationship between the two. \citet{Krivov2011} and \citet{Morales2012} determined that $\sim$2\% of known exoplanet transiting hosts possess warm dust based on the \WS\ $W3$ or $W4$ excesses. \citet{Kennedy2012}, \citet{Ribas2012}, and \citet{Lawler2012} searched for excesses around stars in the \textit{Kepler} field. Altogether, roughly two dozen stars with $W3$ or $W4$ excesses were identified. 
+    
+    Other studies aimed to study the evolution of disks around a younger set of stars. The Scorpius-Centaurus OB association was heavily scrutinized by \citet{Rizzuto2012}, \citet{Luhman2012}, and \citet{Riaz2012}. About 150 stars with excesses were identified from these studies. Other studies focused on \WS\ debris disk searches for sets of spectral types around stars in the solar neighborhood. \citet{Avenhaus2012} found no significant \WS\ excess flux around 103 M-dwarfs, while \citet{Vican2014} identified 98 excesses from a sample of $\sim$8800 solar type stars. 
+    
+    \citet{Wu2013} and \citet{Kennedy2013} searched for excesses around a larger, unbiased sample of stars. The latter study searched for $W3$ excesses, around main-sequence \hip\ stars, while the former study searched for $W4$ excesses around the same set of stars. \citet{Kenned2013} found 7 new $W3$ excesses with an incidence rate of $<1$\% for warm dust in the habitable zone of main sequence stars. \citet{Wu2013} identified roughly 70 new bright $W4$ excesses for stars out to 200~pc. 
+    
+    In total, roughly 250 new excesses were identified by all these studies using data from \WS, and have enhanced our understanding of the evolution of warm dust for stars in the solar neighborhood. 

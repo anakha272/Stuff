@@ -28,7 +28,7 @@
 \usepackage[labelfont=bf]{caption}
 
 %Edit graphics path?
-%\graphicspath{{./}{C://Users//Nathan//Pictures/}}
+
 
 
 %\sloppy
@@ -42,7 +42,7 @@
 
 %CREF CITATION COMMAND
 \newcommand{\crefrangeconjunction}{--}
-\newcommand{\micron}{$\mu m$}
+\newcommand{\micron}{$\mathrm{\mu m}$}
 \newcommand{\file}{}
 \newcommand{\aj}{AJ}			% Astronomical Journal
 \newcommand{\araa}{ARA\&A}		% Annual Review of Astron and Astrophys
@@ -95,11 +95,21 @@
 %\hyphenation{put words here which LaTeX does not hy-phen-ate
 %pro-per-ly}
 
+\newcommand{\WS}{\textit{WISE}}
+\newcommand{\WSAC}{\textit{WISE} All-Sky}
+
+\def\hip{\textit{Hipparcos}}
+\def\akari{\textit{AKARI}}
+\def\iras{\textit{IRAS}}
+\def\iso{\textit{ISO}}
+\def\spitzer{\textit{Spitzer}}
+\def\mass{\textit{2MASS}}
+
 
 \author{Rahul Indrakant Patel}%
-\title{}%
+\title{Census of  Warm Debris Disks in the Solar Neighborhood from \WS\ and \hip}%
 
-\month{????} \year{2015}%
+\month{September} \year{2015}%
 
 \program{Physics}%
 
@@ -185,38 +195,37 @@
 \chapter{Introduction} \label{chap:intro}
 \input{Ch1/Ch1.tex}
 
-\chapter{Detecting Debris Disk From Thermal Emission With The Wide-Field Infrared Survey Explorer Spacecraft}\label{chap:wise_method}
+\chapter{Detecting Debris Disks with the Wide-Field Infrared Survey Explorer}\label{chap:wise_method}
 \input{Ch2/Ch2.tex}
 
 \chapter{Identification of Warm Debris Disks} \label{chap:iddisks}
-%\input{Ch3/Ch3.tex}
+\input{Ch3/Ch3.tex}
 \clearpage
 %\setboolean{@twoside}{false}
 %\includepdf[pages=-,offset=75 -75]{Ch3/WISEPaper_PMH14.pdf}
 
 
 \chapter{Confirming Excesses Through Weighted Combination of Colors}\label{chap:confirm}
+\input{Ch4/Ch4.tex}
 
 \chapter{120 pc Volume Disk Analysis}\label{chap:120pc}
+\input{Ch5/Ch5.tex}
 
 \chapter{Summary of Results}\label{chap:summary}
+\input{Ch6/Ch6.tex}
+
 
 \chapter{Discussion}\label{chap:discussion}
+\input{Ch7/Ch7.tex}
+
 
 \chapter{Future Direction}\label{chap:future}
 
 
+\appendix
+hi there
 
-
-%\include{ch1_introduction}
-
-
-%\include{chapter2}
-% ...
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\appendix
+\input{Appendix/appendix_test.tex}
 
 %\include{appendix1}
 %\include{appendix2}
