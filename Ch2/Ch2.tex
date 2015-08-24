@@ -37,7 +37,7 @@
     \subsection{Mission Overview}\label{sec:wise_overview}
 
 
-    WISE is an Earth orbiting observatory, 525~km above the Earth's surface. WISE was funded by NASA/JPL and launched on December 14th, 2009. It is a medium-class explorer mission weighing 750~kg. The satellite consists of a 40~cm diameter telescope and four imaging CCDs which are cooled by solid hydrogen cryostats. Two of the CCDs are designed to image the sky in the near-infrared wavelengths (3.5\micron and 4.6\micron) and two in the mid-infrared (12\micron and 22\micron). Figure~\ref{fig:WISE_satellite} shows an illustration of the physical satellite. 
+    \WS\ is an Earth orbiting observatory, 525~km above the Earth's surface. \WS\ is funded by NASA/JPL and launched on December 14th, 2009. It is a medium-class explorer mission weighing 750~kg. The satellite consists of a 40~cm diameter telescope and four imaging CCDs which are cooled by solid hydrogen cryostats. Two of the CCDs are designed to image the sky in the near-infrared wavelengths (3.5\micron\ and 4.6\micron) and two in the mid-infrared (12\micron\ and 22\micron). Figure~\ref{fig:WISE_Satellite} shows an illustration of the physical satellite. 
   
     
     %===================================================================
@@ -52,7 +52,7 @@
     %===================================================================
     
  
-    The mission was successful in scanning 99.99\% of the entire sky in the aforementioned IR bands. WISE's detector field-of-view is 47' on a side. During its continual orbit around the Earth, overlapping observation frames 11 second cadences were taken (8.8~s of integration). The overlap of frames, over multiple orbits, ensures greater depth of coverage. In one day, the satellite performs 15 orbits. Figure~\ref{fig:scan_plan} shows the overlapping frames as the satellite orbits the Earth. Further details of the entire mission can be found online\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/}} or in \citet{Wright2010}. 
+    The mission was successful in scanning 99.99\% of the entire sky in the aforementioned IR bands. WISE's detector field-of-view is 47' on a side. During its continual orbit around the Earth, overlapping observation frames 11 second cadences were taken (8.8~s of integration). The overlap of frames, over multiple orbits, ensures greater depth of coverage. In one day, the satellite performs 15 orbits. Figure~\ref{fig:wise_scan_plan} shows the overlapping frames as the satellite orbits the Earth. Further details of the entire mission can be found online\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/}} or in \citet{Wright2010}. 
 
     %===================================================================
     %  WISE SCAN PLAN
@@ -87,40 +87,45 @@
     
     
    
-    \subsection{WISE Data Releases}
-\textbf{Mention saturation}
+    \subsection{\WS\ Data Releases}
+
     The WISE mission has produced a number of different data releases. The first release, called the \textit{WISE Preliminary Release} was made public on April 14, 2011\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/prelim/preview.html}} and contained data that covered only 57\% of the sky. The next public release of WISE data was made on March 14, 2012. This data set was called the \textit{All-Sky Data Release}\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/}} and covered the entire sky in all four bands. After the cryostats were depleted, WISE began its ``warm'' mission, and only collected data in the two near-IR $W1$ and $W2$ bands. This commenced the Near-Earth Object WISE (NEOWISE) mission. A subsequent all-sky data release by WISE came on November 13, 2013 called the \textit{All-WISE Data Release}\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allwise/}}. For the work I present in the rest of this dissertation, I only use measurements from the \textit{All-Sky Data Release}, except in comparison with other release. 
     
     Since the WISE data is in the public domain, it can easily be accessed online. The online databases consists of measurements for over half a billion objects in all four bands. These measurements consist of photometric data for each band, as well as meta-data pertaining to the quality of the data product. The database also consists of Atlas images of the processed data and can be viewed at \url{http://irsa.ipac.caltech.edu/applications/wise/}. 
     
-    \subsection{Cautionary Tales of WISE Data}
+    \subsection{Cautionary Tales of WISE Data}\label{sec:bad_wise}
+    
+    Before simply using the \WS\ data products, it is important to understand all the nuances and aspects of what one might encounter in this data. For instance, the \WS\ team implemented profile-fitting algorithms to extract the standard reported measurements and uncertainties. The \WS\ data also provides several meta-data tags for each source to characterize the quality of the measurement. Here I will summarize some of the more important meta-data tags found in the \WS\ database. All of these pertain to identifying sources whose photometry have a high probability of contamination from artificial and astrophysical sources, and hence are likely to bias the presence of an IR excess (i.e., debris disk).
     
         \subsubsection{Extended Source Contamination}
-        
-        
+    
+    The Two Micron All-Sky Survey \citep[\mass\ ;][]{Skrutskie2006} is a ground based all-sky survey that has mapped out the entire sky in three near-IR bands: $J$ (1.25\micron), $H$ (1.6\micron), and $K_s$ (2.17\micron). As a result, the location of known extragalatic extended sources is well known in the near-IR. Stars whose photometry might be contaminated by the flux from a nearby \mass\ extended source are flagged in \WS\ using \verb|ext_flg| meta-data tag. Figure~\ref{fig:extflg_contamination} shows clearly that the photometry of the star, HIP~3293, is contaminated from the isophotal footprint of a nearby \mass\ galaxy. 
+            
         %===================================================================
         %  2MASS CONTAMINATION
         %===================================================================
-        \begin{figure}
+        \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.7\textwidth]{Ch2/extflg_2_HIP3293}
+        \includegraphics[width=0.4\textwidth]{Ch2/extflg_2_HIP3293}
         \caption[Contamination From \mass\ Extended Source.]{An example of a star contaminated due to a \mass\ extended source object. This $W4$ band image shows the star, HIP~3293, indicated by the blue circle, within the vicinity of a background extragalactic source. The photometry of this star is flagged with \textit{extflg}=2, indicating that it is within the isophotal footprint of this galaxy, and is likely to be contaminated.}
         \label{fig:extflg_contamination}
         \end{figure}
         %===================================================================
         
     
-        \subsubsection{Saturated WISE Photometry}
+        
     
         \subsubsection{Artificial Instrument Contamination}
+    Source photometry is also likely to be contaminated by artificial optical artifacts.  Diffraction spikes from nearby bright sources, scattered light halo's from the edge of a bright source's PSF, optical ghosts caused by internal reflections of the telescope optics, and latent images can all contaminate a real source or give rise to an spurious object. The level of contamination for a source in each of the four \WS\ bands is given  the confusion flag \verb|cc_flg| --- a four character string. For instance, the star HIP~32362's \verb|cc_flg=hhdd|, implying that the $W1$ and $W2$ bands are predominantly contaminated by halo artifcats from a nearby bright star, while the $W3$ and $W4$ bands are contaminated by diffraction spikes from a nearby bright source. Figure~\ref{fig:ccflag_contamination} shows HIP~32362, with markers for the location of the different artifacts. A full description of these artifacts can be found in Section IV.4.g of the \WS\ Explanatory Supplement\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec4_4g.html}}. 
+        
         
         %===================================================================
         %  CONFUSION FLAG CONTAMINATION
         %===================================================================
-        \begin{figure}
+        \begin{figure}[!h]
         \centering
         \includegraphics[width=\textwidth]{Ch2/ccflag_hhdd_HIP32362}
-        \caption[Contamination From Optical Articats]{\WS\ four band image centered on HIP~32362. The confusion flag for this star is \textit{ccflag=hhdd}. These flags, one character per band indicate that the source is real but is most likely contaminated by mostly halo (h) or from diffraction spikes (d) from a nearby bright star. Diffraction spikes and halo artifacts are marked by red circles and yellow squares, respectively.}
+        \caption[Contamination From Optical Articats]{\WS\ four band image centered on HIP~32362. The confusion flag for this star is \textit{ccflg=hhdd}. These flags, one character per band indicate that the source is real but is most likely contaminated by mostly halo (h) or from diffraction spikes (d) from a nearby bright star. Diffraction spikes and halo artifacts are marked by red circles and yellow squares, respectively.}
         \label{fig:ccflag_contamination}
         \end{figure}
         %===================================================================
@@ -128,10 +133,12 @@
     
         \subsubsection{Moon Contamination}
         
+        \WS's earth orbit unfortunately meant it had to contend with scattered light from the Moon. \WS's observing pattern was such that it attempted to avoid this scattered light. However, complete avoidance was impossible, and the scattered light from the Moon heavily affected frames in $W3$ and $W4$ relative to the near-IR bands. Figure~\ref{fig:moonflag_contamination} shows the structure of this effect in the $W3$ and $W4$ band images, with the star HIP~114340 marked for reference. The level of the contamination is given by the \verb|moon_flg| and provides the percentage of single frames that are contaminated by the moon for each band. Additional information on Moon contamination in \WS\ can be found at \url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec6_2.html}.
+        
         %===================================================================
         %  MOON FLAG CONTAMINATION
         %===================================================================
-        \begin{figure}
+        \begin{figure}[!h]
         %\centering
         \begin{tabular}{cc}
         \includegraphics[width=0.6\textwidth]{Ch2/moonflg_HIP114340_W3_88}&
@@ -141,18 +148,21 @@
         \label{fig:moonflag_contamination}
         \end{figure}
         %===================================================================
-
-        
+    
+    
+        \subsubsection{Saturated WISE Photometry}
+    The detectors CCDs aboard the \WS\ spacecraft saturate for relatively bright sources: 8.1~mag, 6.7~mag, 3.8~mag, and -0.4~mag in $W1$, $W2$, $W3$, and $W4$, respectively. It is important to keep these limits in mind, as the photometry for sources brighter than these saturation limits are unreliable. Additional information on the saturation of \WS\ sources can be found in Section VI.3.d of the \WS\ Explanatory Supplement\footnote{\url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec6_3d.html}}. 
+    
+    However, the profile-fitting algorithm attempts to obtain measurements of saturated sources by using non-saturated pixels in the wings of the source's PSF. As a result, a systematic trend arises as a function of the source brightness. Figure 17 in Section IV.4.a.vi.1 illustrates this trend of source brightness as a function of \mass\ $K_s-WISE$ color. This trend is stronger in $W1$ and $W2$, which are the limiting bands in searching for excesses. As I will show in Chapter 3, these trends can be corrected, and thus allow for brighter stars to be used in a large survey. 
+    
+    
         \subsubsection{Internally Inconsistent Variability}
+    
+    The variability flag in the \WS\ database \verb|var_flg| indicates the probability that the photometry in a particular band is variable. The variability may be due to intrinsic astrophysical processes, although this is typically reserved for non-main sequence objects. The variability may also be due to a number of different factors pertaining to instrumental artifacts between subsequent single frame observations by \WS. Additional information for the variability flag can be found at \url{http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec4_4ciii6.html}
     
         \subsubsection{Internally Inconsistent Photometry}
     
-    
-    
-    
-    
-    
-    
+    During the course of this project, we found a peculiar behavior in the \WS\ data. In some very rare cases, the final reported flux measurement in the All-Sky database --- after all relevant single frames for that particular star were coadded by the \WS\ internal algorithms --- significantly differed from the averaged single-frame measured fluxes for the same star. In other words, there seemed to be internal \WS\ inconsistencies in the measurements of a small percentage of stars. Since we are looking for peculiar (i.e., excesses), we are sensitive to finding these stars. This behavior will also bias the level of the measured flux. Although there is no reported reason for this phenomenon, we have found a way to deal with this inconsistency and detail it in \S~2.3 of Chapter 3. 
     
 
     \subsection{Advantages Over Previous Debris Disk Surveys}
@@ -206,7 +216,7 @@
     
 \section{Detecting Thermal Emission From Debris Disks with WISE}
 
-    \subsection{Advantages of WISE Color Excess}
+    \subsection{Advantages of WISE Color Excess}\label{sec:advantage_wise}
     
     Most debris disks have been found from the subtraction of the measured IR flux from the modelled photospheric flux, as described in \S~\textbf{find appro. section}. An alternative to photospheric modelling of individual stars is to derive an estimate of the excess empirically by calculating star's ``color excess''. The astronomical magnitude system defines the color of a star by the logarithmic ratio of fluxes at two different wavelengths
     
@@ -248,6 +258,11 @@
     
     Other studies aimed to study the evolution of disks around a younger set of stars. The Scorpius-Centaurus OB association was heavily scrutinized by \citet{Rizzuto2012}, \citet{Luhman2012}, and \citet{Riaz2012}. About 150 stars with excesses were identified from these studies. Other studies focused on \WS\ debris disk searches for sets of spectral types around stars in the solar neighborhood. \citet{Avenhaus2012} found no significant \WS\ excess flux around 103 M-dwarfs, while \citet{Vican2014} identified 98 excesses from a sample of $\sim$8800 solar type stars. 
     
-    \citet{Wu2013} and \citet{Kennedy2013} searched for excesses around a larger, unbiased sample of stars. The latter study searched for $W3$ excesses, around main-sequence \hip\ stars, while the former study searched for $W4$ excesses around the same set of stars. \citet{Kenned2013} found 7 new $W3$ excesses with an incidence rate of $<1$\% for warm dust in the habitable zone of main sequence stars. \citet{Wu2013} identified roughly 70 new bright $W4$ excesses for stars out to 200~pc. 
+    \citet{Wu2013} and \citet{Kennedy2013} searched for excesses around a larger, unbiased sample of stars. The latter study searched for $W3$ excesses, around main-sequence \hip\ stars, while the former study searched for $W4$ excesses around the same set of stars. \citet{Kennedy2013} found 7 new $W3$ excesses with an incidence rate of $<1$\% for warm dust in the habitable zone of main sequence stars. \citet{Wu2013} identified roughly 70 new bright $W4$ excesses for stars out to 200~pc. In total, roughly 250 new excesses were identified by all these studies using data from \WS. These studies have increased our understanding of warm dust, and how it relates to systems of different ages, as well as systems with known planets. 
     
-    In total, roughly 250 new excesses were identified by all these studies using data from \WS, and have enhanced our understanding of the evolution of warm dust for stars in the solar neighborhood. 
+    However, there are inherent biases and limitations in the aforementioned studies, such that the true potential of searching for excesses with the \WS\ database is not realized \textbf{reword}. One drawback is in the sample sizes used in some of these studies. However, the size of the sample is often time unavoidable (e.g., due to $\sim$ only 1500 known exoplanets, or dearth of nearby young stellar associations). A greater concern is in the methods used to identify excesses. For instance, the majority of these surveys identified excesses by using SED fitting. This technique is prone to identifying a large number of bright excesses, based on the discussion in \S~\ref{sec:advantage_wise}. The rest of the studies identified excesses based on the \WS\ colors alone, without having subtracted off the photospheric \WS\ color. This also leads to identifying inherently bright excesses, but can also introduce large false-positve detections without proper subtraction of the photospheric color. One other bias, as discussed in \S~\ref{sec:bad_wise}, the \WS\ bands saturate at relatively faint magnitudes. And since all of these surveys did not include these saturated stars in their search, they are incomplete for relatively nearby stars. 
+    
+    In the following chapters, I will address these biases and present a set of studies that complements, as well as improves upon the search for warm dust with \WS. I utilize the \WS\ data to accurately understand the systematic behavior of the \WS\ data and identify warm dust around nearby main-sequence stars through the use of empirically identified \WS\ colors in addition to incorporating bright, saturated \WS\ photometry. Thus, not only are we able to find faint warm dust in some of these systems, relative to published studies, it will search for undetected excesses around nearby bright stars. 
+    
+    
+    
