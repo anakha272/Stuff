@@ -1,0 +1,106 @@
+
+
+
+\chapter{Major Debris Disk Studies}
+
+\include{Literature_table.tex}
+
+
+\chapter{Something}
+
+\section{The Weighted Excess Metric}
+\label{sec:appendix}
+
+
+We present the full derivation of $\Sigma_{\overline{E[Wj]}}$ for a star at a \WS\ mid-IR band $Wj$, where $j=3\mbox{ or }4$.Starting with Equation~\ref{eq:excess_1}, we arrive at a general form for the weighted excess by adding the individual color excess terms, and multiplying by weights $a_i$
+
+\begin{eqnarray}%\label{eq:gen_weighted_excess}
+\overline{E[Wj]} &=&  \sum_{i=1}^{j-1} a_i E[Wi-Wj]\label{eq:gen_weighted_excess}\\
+                 &=& \sum_{i=1}^{j-1} a_i\left(Wi-Wj-W_{ij}(B_T-V_T)\right)\label{eq:gen_weighted_excess2}.
+\end{eqnarray}
+
+\noindent The weights $a_i$ are normalized and are unknown:
+
+\begin{equation}\label{eq:sum_weights}
+\sum_{i=1}^{j-1} a_i \equiv 1. 
+\end{equation}
+
+\noindent Our general form for the S/N of the weighted average of the excess at $Wj$ is calculated by dividing equation~\ref{eq:gen_weighted_excess} by the uncertainty in the weighted average, $\sigma_{\overline{E[Wj]}}$. The uncertainty is defined as the quadrature sum of each entry of the Jacobian matrix of $\overline{E[Wj]}$ weighted by its respective uncertainty. The variance of the weighted average is
+
+\begin{equation}\label{eq:wtavgExcessUnc}
+      \sigma_{\overline{E[Wj]}}^2 = \sum_{\alpha} \sigma_{\alpha}^2 \left(\frac{\partial \overline{E[Wj]}}{\partial \alpha}\right)^2 + O\left(\sigma_{Wi,Wij} \right) + O(\sigma_{Wi,Wj}),
+\end{equation}
+
+\noindent where $\alpha \in \{Wi, Wj, Wij(B_T-V_T)\}$  are terms on the right hand side of Equation~\ref{eq:gen_weighted_excess2}. The cross terms in the Jacobian matrix, $O(\sigma_{Wi,Wij})$ and $O(\sigma_{Wi,Wj})$ are proportional to the covariance of the uncertainties in the \WS\ photometry and the mean \WS\ colors. We ignore the first term, $O(\sigma_{Wi,Wij})$, because $\sigma_{Wij} \sim 0.1 \sigma_{Wi}$ and $W_{ij}$ is only a shallow function of $B_T-V_T$. We also ignore $O(\sigma_{Wi,Wj})$ because the errors on $Wi$ and $Wj$ are not correlated and hence $\sigma_{Wi,Wj}\sim 0$. Thus, Equation~\ref{eq:wtavgExcessUnc} reduces to
+
+\begin{equation}\label{eq:wtavgExcessUnc_reduced}
+      \sigma_{\overline{E[Wj]}}^2 \simeq \sum_{\alpha} \sigma_{\alpha}^2 \left(\frac{\partial \overline{E[Wj]}}{\partial \alpha}\right)^2,
+\end{equation}
+
+\noindent where $\alpha \in \{Wi, Wj\}$ after removing the photospheric uncertainties from the calculation. We define the significance of the weighted excess at $Wj$ in the same form as in Equation~\ref{eq:combined_significance}:
+
+\begin{equation}\label{eq:combined_sig_appendix}
+	    \Sigma_{\overline{E[Wj]}} = \frac{\overline{E[Wj]}}{\sigma_{\overline{E[Wj]}}}. 
+\end{equation}
+
+	We proceed with solving for the weights in equation~\ref{eq:gen_weighted_excess}. Using $j=4$ as an example, we can expand equation~\ref{eq:gen_weighted_excess} as 
+	
+\begin{eqnarray}\label{eq:W4_expanded_1}
+\overline{E[W4]} & = & a_1 E[W1-W4] + a_2 E[W2-W4] + a_3 E[W3-W4] \\
+				 & = & a_1 (W1-W4-W_{14}) + a_2(W2-W4-W_{24}) + a_3(W3-W4-W_{34}),
+\end{eqnarray}
+
+\noindent Inserting $a_3 = 1-a_1-a_2$ into Equation~\ref{eq:W4_expanded_1} produces
+
+\begin{equation}\label{eq:w4_expanded_2}
+\overline{E[W4]} =  a_1W1 - a_1W_{14} + a_2 W2 - a_2 W_{24} + W3 - W4 - W_{34} - a_1W3 + a_1 W_{34} - a_2 W3 + a_2 W_{34}. 
+\end{equation}
+
+\noindent The variance of $\overline{E[W4]}$ is calculated using Equation~\ref{eq:wtavgExcessUnc_reduced},
+
+\begin{equation}\label{wtd_variance}
+\sigma_{\overline{E[W4]}}^2 = a_1^2 \sigma_{W1}^2 + a_2^2 \sigma_{W2}^2 + (1-a_1-a_2)^2\sigma_{W3}^2  + \sigma_{W4}^2.
+\end{equation}
+
+\noindent Next we seek solutions for $a_1$ and $a_2$ that minimize the dependence of $\sigma_{\overline{E[W4]}}^2$ on these weights. Thus, by calculating
+
+\begin{equation}\label{eq:mina1}
+\left(\frac{\partial \sigma_{\overline{E[W4]}}^2}{\partial a_1}\right) = 0 = 2a_1\sigma_{W1}^2 - 2 \sigma_{W3}^2 + 2a_2\sigma_{W3}^2 + 2a_1\sigma_{W3}^2,
+\end{equation}
+
+
+\begin{equation}\label{eq:mina2}
+\left(\frac{\partial \sigma_{\overline{E[W4]}}^2}{\partial a_2}\right) = 0 = 2a_2\sigma_{W2}^2 - 2 \sigma_{W3}^2 + 2a_2\sigma_{W3}^2 + 2a_1\sigma_{W3}^2
+\end{equation}
+
+
+We solve for $a_1$ and $a_2$
+
+\begin{equation}\label{eq:a1solved}
+a_1 = \frac{\sigma_{W3}^2\sigma_{W2}^2}{\sigma_{W2}^2\sigma_{W1}^2 + \sigma_{W2}^2\sigma_{W3}^2 + \sigma_{W3}^2\sigma_{W1}^2},
+\end{equation}
+
+
+\begin{equation}\label{eq:a2solved}
+a_2 = \frac{\sigma_{W3}^2\sigma_{W1}^2}{\sigma_{W2}^2\sigma_{W1}^2 + \sigma_{W2}^2\sigma_{W3}^2 + \sigma_{W3}^2\sigma_{W1}^2}. 
+\end{equation}
+
+\noindent Now, using Equations~\ref{eq:a1solved} and \ref{eq:a2solved}, we recover $a_3$, 
+
+\begin{equation}\label{eq:a3solved}
+a_3 = \frac{\sigma_{W2}^2\sigma_{W1}^2}{\sigma_{W2}^2\sigma_{W1}^2 + \sigma_{W2}^2\sigma_{W3}^2 + \sigma_{W3}^2\sigma_{W1}^2}.
+\end{equation}
+
+To reduce the form of these weights, we multiply and divide each by $\sigma_{W1}^2\sigma_{W2}^2\sigma_{W3}^2$, to finally obtain the general form presenting us with a general form for each weight 
+
+\begin{equation}\label{eq:ai}
+a_i = \frac{1/\sigma_{Wi}^2}{\sum_{i=1}^{j-1}1/\sigma_{Wi}^2}. 
+\end{equation}
+
+\noindent  which is valid for either weighted $W3$ ($j=3$) or weighted $W4$ ($j=4$) excesses where $j=3 \mbox{ or } 4$ depending on whether we want to search for $W3$ or $W4$ excesses. We then set $A=\sum_{i=1}^{j-1}1/\sigma_{Wi}^2$, substitute equation \ref{eq:ai} into equation \ref{wtd_variance} to obtain a reduced expression for the variance of the excess ($\sigma_{\overline{E[W4]}}$) and then place that expression into Equation \ref{eq:combined_sig_appendix}. This gives us the final form the for the significance of the weighted excess, which when generalized for for $j=3$ and $j=4$ is
+
+\begin{equation}\label{eq:wtd_significance_appendix2}
+\Sigma_{\overline{E[Wj]}} = \frac{\frac{1}{A}\sum\limits_{i=1}^{j-1}\frac{E[Wi-Wj]}{\sigma_i^2}}{\sqrt{\sigma_j^2 + 1/A}},  
+\end{equation}
+
+\noindent and is equivalent to the form presented in equation~\ref{eq:combined_significance}.

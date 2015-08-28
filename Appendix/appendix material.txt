@@ -7,4 +7,5 @@ Appendix items:
 5) Table for Spitzer Specifications
 6) Table for IRAS Specifications
 7) Table for Herschel Specifications
-8) Summary Table of disk detections
+8) Summary Table of disk detections -- done but needs edits
+9) Discussion on using empirical colors

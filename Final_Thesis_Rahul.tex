@@ -2,11 +2,12 @@
 %\includeonly{chapter1}
 \bibliographystyle{apj}
 \usepackage{graphicx}
+\usepackage{deluxetable}
+\usepackage{longtable}
 \usepackage{color}
 \usepackage{bm}
 \usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{cleveref}
 \usepackage{setspace}
 \usepackage{array}
 \usepackage{tabularx}
@@ -92,6 +93,8 @@
 \newcommand{\physscr}{Phys.~Scr}   % Physica Scripta
 \newcommand{\planss}{Planet.~Space~Sci.}   % Planetary Space Science
 \newcommand{\procspie}{Proc.~SPIE}   % Proceedings of the SPIE
+\newcommand{\ES}{$\Sigma_{\overline{E}}$}
+
 %\hyphenation{put words here which LaTeX does not hy-phen-ate
 %pro-per-ly}
 
@@ -104,10 +107,12 @@
 \def\iso{\textit{ISO}}
 \def\spitzer{\textit{Spitzer}}
 \def\mass{\textit{2MASS}}
-
+\def\p14{PMH14}
+\newcommand{\arcsec}{$''$}
+\newcommand{\arcmin}{$'$}
 
 \author{Rahul Indrakant Patel}%
-\title{Census of  Warm Debris Disks in the Solar Neighborhood from \WS\ and \hip}%
+\title{The Census of  Warm Debris Disks in the Solar Neighborhood from \WS\ and \hip}%
 
 \month{September} \year{2015}%
 
@@ -161,7 +166,7 @@
 \centerline{\bf{Rebecca Oppenheimer - Committee Member}}
 \centerline{\bf{Professor, American Museum of Natural History}}
 \vspace*{2\baselineskip}
-\centerline{This dissertation is accepted? by the Graduate School}
+\centerline{This dissertation is \textbf{??accepted??} by the Graduate School}
 \vspace*{3\baselineskip}
 \centerline{Charles Taber}
 \centerline{Dean of the Graduate School}
@@ -169,7 +174,11 @@
 \newpage
 
 \begin{abstract}
-    garble%\input{abstract}
+    Debris disks are optically thin circumstellar disks around main-sequence stars, comprised of micron-sized grains. The dust is generated from destructive collisions of planetesimals, induced from gravitational perturbations by large planets. Debris disks act as signposts for planetary systems, and are useful in understanding architectural similarities to the Solar System's disk.  The dust in these disks can be detected by their thermal infrared flux, measured as an excess above the photospheric emission. Dust at different circumstellar locations, inferred from the peak wavelength of the detected emission, can act as a probe for local dynamical activity in the system. Over the last thirty years, cold disks, analogous to the Kuiper Belt, have constituted the bulk of debris disk detections. Warm disks, analogous to the Main Asteroid belt, can act as signposts for dynamical activity in the terrestrial planet zone, but are rare in contrast. %Thus, without proper contextual characterization of the inner warm dust regions, we are left with an incomplete picture of planetary system evolution.
+The Wide-Field Infrared Survey Explorer (\WS) space telescope mapped the entire sky in two near-IR and two mid-IR bands in 2012. The two mid-IR bands are well placed to probe dust emission in the TPZ of these stars, at sensitivities greater than the last all-sky IR survey (\iras) in 1983. \WS\ also provides us for the first time an opportunity to contemporaneously measure the photospheric and IR excess wavelengths of the entire sky, increasing sensitivity to fainter levels of dust.  
+	
+	In this thesis, I present an unbiased survey of warm disks around main-sequence Hipparcos stars in the solar neighborhood, detected using data from the \WS\ All-Sky Database. Our series of surveys builds upon each other to find previously undetected faint, warm debris disks by including bright photometrically saturated stars in \WS, using empirical photospheric colors, removing several non-trivial false-positive sources, and verifying and validating these detected excesses.  This thesis adds a substantial number of clean, new disk targets to the census of debris disks in the solar neighborhood that will enhance our understanding of the formation and evolution of planetary systems.
+
 \end{abstract}
 
 \begin{dedication}
@@ -198,17 +207,17 @@
 \chapter{Detecting Debris Disks with the Wide-Field Infrared Survey Explorer}\label{chap:wise_method}
 \input{Ch2/Ch2.tex}
 
-\chapter{Identification of Warm Debris Disks} \label{chap:iddisks}
+\chapter{Identification of Warm Debris Disks Within 75~pc} \label{chap:iddisks}
 \input{Ch3/Ch3.tex}
 \clearpage
 %\setboolean{@twoside}{false}
 %\includepdf[pages=-,offset=75 -75]{Ch3/WISEPaper_PMH14.pdf}
 
 
-\chapter{Confirming Excesses Through Weighted Combination of Colors}\label{chap:confirm}
+\chapter{Improved Methods To Verify \WS\ Debris Disks With Weighted Colors and unWISE Images}\label{chap:confirm}
 \input{Ch4/Ch4.tex}
 
-\chapter{120 pc Volume Disk Analysis}\label{chap:120pc}
+\chapter{Identification of Warm Debris Disks In The Galactic Plane And Out to 120~pc}\label{chap:120pc}
 \input{Ch5/Ch5.tex}
 
 \chapter{Summary of Results}\label{chap:summary}
@@ -221,11 +230,11 @@
 
 \chapter{Future Direction}\label{chap:future}
 
+\bibliography{References_PhD}
+
 
 \appendix
-hi there
-
-\input{Appendix/appendix_test.tex}
+\input{Appendix/appendix.tex}
 
 %\include{appendix1}
 %\include{appendix2}
@@ -233,5 +242,4 @@ hi there
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliography{References_PhD}
 \end{document}
