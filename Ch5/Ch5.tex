@@ -1,35 +1,36 @@
-\section{Introduction}
+\section{Introduction}
 
-    Up until now, we have restricted the identification of excesses to within a 75~pc volume around the Sun. As discussed in the \textbf{which section} of Chapters~\ref{chap:iddisks} and \ref{chap:confirm}, this is because any stars with excesses identified within this volume have accurate parallaxes, and make excellent targets for additional disk characterization through high-contrast imaging techniques. In addition, the stars have very little to no line-of-sight extinction from interstellar dust. These are stars within a structure known as the Local Bubble \citep{Lallement2003}. 
+    Up until now, we have restricted the identification of excesses to within a 75~pc volume around the Sun. This is because stars within this volume have accurate parallaxes, and make excellent targets for further disk characterization through high-contrast imaging techniques. In addition, the stars have very little to no line-of-sight extinction from interstellar dust. These are stars within a structure known as the Local Bubble \citep{Lallement2003}. 
     
-    
-    However, the nearby solar neighborhood has been heavily scrutinized for debris disks by the last thirty years of disk detections, by missions from \iras, \spitzer, and now \WS. If one considers the census of debris disks within 120~pc, roughly 80\%  reside within a volume 75~pc, with $\sim$20\% within the volume slice between 75 and 120~pc. However, by looking at the distribution of \hip\ main-sequence stars in 120~pc, the ratio of stars between 0--75~pc and 75--120~pc is nearly 50/50. Therefore, if we are to believe the constant incidence rate of disks derived by the last thirty years of disk detections, there are a vast number of new debris disks that have not yet been identified. 
+    However, the nearby solar neighborhood has been heavily scrutinized for debris disks by the last thirty years of disk detections, by missions from \iras, \spitzer, and now \WS. If one considers the census of debris disks within 120~pc, roughly 80\%  reside within a volume 75~pc, while only $\sim$20\% are within the volume between 75 and 120~pc. However, by looking at the distribution of \hip\ main-sequence stars within 120~pc, the ratio of stars between 0--75~pc and 75--120~pc is nearly 50/50. In addition, the density of stars increases at lower galactic lattitudes. However, only $\sim$8\% of known debris disks are within the galactic plane. Usually, the galactic plane is avoided because of the density of stars, which can cause source confusion and false detections. But if we are to believe the incidence rate of disks derived by the last thirty years of disk detections, there are a vast number of new debris disks that have yet to be identified, both beyond 75~pc, and within the galatic plane.
     
     %lit known 75: 606
     %lit 75-120: 161
     %lit total: 767
+    %lit all : 1025
+    %lit inside gal plane (5 deg): 77
+    % percent disks within galactic plane: 
     
-    Since we already have the necessary tools in place, and our parent sample of stars (see section blah in chapter blah) already extends out to 120~pc, it may seem like a relatively simple matter to merge the science and parent samples and identify excesses of the entire parent sample. However, stars beyond 75~pc are more likely to be affected by line-of-sight extinction increases. The interstellar dust will decrease the intensity of shorter wavelength light from a star. If one is looking for IR excesses using short wavelength data, the line-of-sight extinction will artificially boost any measured excess mid-IR flux, thereby introducing an additional false-positive source. Thus, accurate assessment of an excess beyond 75~pc for a large sample of stars, similar to the ones we have been utilizing, requires a priori knowledge of the extinction level for all our stars at the various \WS\ bands.
-    
-    To largely remove the effects of interstellar extinction, one can use the $W3$ and $W4$ bands to search for $W3-W4$ single color excesses. Interstellar extinction is greater at the $W1$ and $W2$ bands than at $W3$. In addition, the data show a relatively flat slope for the IR extinction curve between 10 and 20\micron\ \citep{Wang2014}. Thus, any extinction felt by $W3$ will be roughly of the same magnitude felt by $W4$, preserving the measured infrared excess flux. Thus, in this study, we investigate the presence of warm and faint excesses at $W4$ all the way out to 120~pc, by identifying significant $W3-W4$ color excesses.
     
     
-    \textbf{Write something about galactic plane stuff}
-
+    Since we already have the necessary tools in place, and our parent sample of stars (see \S~2.2.1 in Chapter~\ref{chap:iddisks}) already extends out to 120~pc, it may seem like a relatively simple matter to merge the science and parent samples and identify excesses of the entire parent sample. Unfortunately, stars beyond 75~pc are more likely to be affected by line-of-sight extinction. The interstellar dust will decrease the intensity of shorter wavelength light from a star, thereby artificially boosting any measured mid-IR excess flux. Thus, an accurate assessment of an excess beyond 75~pc, for a large sample of stars, requires a priori knowledge of the extinction level for all our stars at the various \WS\ bands.
+    
+    To largely remove the effects of interstellar extinction, one can use the $W3$ and $W4$ bands to search for $W3-W4$ single color excesses. Interstellar extinction is greater at the $W1$ and $W2$ bands than at $W3$. In addition, the data show a relatively flat slope for the IR extinction curve between 10 and 20\micron\ \citep{Wang2014}. Thus, any extinction felt by $W3$ will be roughly of the same magnitude felt by $W4$, preserving the measured infrared excess flux. In this study, we investigate the presence of warm and faint excesses at $W4$ all the way out to 120~pc, by identifying significant $W3-W4$ color excesses. In addition, we include stars within the galactic plane by first removing stars contaminated from blended sources by using our astrometric offset analysis, which we introduced in \S~\ref{sec:auto_rejunwise}.
+    
 
 \section{Sample Selection}
 
-    We derived our sample from the same set of \hip\ stars as was discussed in \S~2 of Chapter~\ref{chap:iddisks}. We selected main sequence \hip\ stars with well behaved \WS\ All-Sky photometry in the $W3$ and $W4$ bands. Our parent sample consists of stars within 120~pc with Tycho colors constrained to $-0.17~\rm{mag}< B_T-V_T< 1.4~\rm{mag}$ (late B to K spectral types). Since we are only interested in the $W3-W4$ colors for this study, saturation corrections to the $W1$ and $W2$ photometry was not necessary. Filters from \S~2.2.1 in Chapter~\ref{chap:iddisks}, that are relevant to the $W3$ and $W4$ bands, were placed on our parent sample of stars. 
+    We used a subset of the sample of \hip\ stars used in \S~2 of Chapter~\ref{chap:iddisks}. To summarize, we selected main sequence \hip\ stars with well behaved \WS\ All-Sky photometry in the $W3$ and $W4$ bands. Our parent sample consists of stars within 120~pc with optical Tycho colors constrained to $-0.17~\rm{mag}< B_T-V_T< 1.4~\rm{mag}$ (late B to K spectral types). Since we are only interested in the $W3-W4$ colors for this study, saturation corrections to the $W1$ and $W2$ photometry were not necessary. Filters from \S~2.2.1 in Chapter~\ref{chap:iddisks}, that are relevant to the $W3$ and $W4$ bands, were placed on our parent sample of stars. 
     
-    In contrast to the last two studies, we include stars within the galatic plane into our parent sample for this study. This adds an additional 766 \hip\ stars with well behaved $W3$ and $W4$ photometry to our parent sample, bringing the number of stars in our $W3-W4$ parent sample to 15199. We would also like to point out that in this study, we increase our science sample out to 120~pc. Therefore, our science and parent samples are equivalent.
+    In contrast to the last two studies, here we include stars within the galactic plane. This adds an additional 766 \hip\ stars with well behaved $W3$ and $W4$ photometry to our parent sample, bringing the number of stars in our $W3-W4$ parent sample to 15199. We would also like to point out that in this study, we increase our science sample out to 120~pc. Therefore, our science and parent samples are equivalent.
 
    \subsection{Culling the Parent Sample via \textit{unWISE} Images}\label{sec:unwise_reject}
     
     The higher angular resolution \WS\ images from the \textit{unWISE} image service \citet{Lang2014} affords us the opportunity to identify sources that are potentially contaminated from blended point sources (e.g., active galactic nuclei, luminous infrared galaxies, other stars, etc.) or extended emission from interstellar IR nebulosity. Contaminated sources will manifest themselves as astrometric offsets, calculated from the centroid positions between the $W3$ and $W4$ images or by using different sized apertures in the $W4$ band to calculate the star's astrometric offset. In Chapter~\ref{chap:confirm}, our goal was to identify contaminants amongst the excesses we had already discovered. In contrast, here we aim to reject potentially contaminated stars \textit{prior} to excess identification.
     
-    In short, we aimed to identify point source contamination by rejecting stars with significant $W3$ to $W4$ relative centroid offsets ($\Delta r_{W3,W4} = \left|\vec{r}_{_{W3}} - \vec{r}_{_{W4}}\right|$), as well as identify and reject stars contaminated from extend source emission from their measured $W4$ to wide-$W4$ centroid offsets ($\Delta r_{W4} = \left|\vec{r}_{_{W4}} - \vec{r}_{_{W4},_{wide}}\right|$). For this analysis, we extracted centroids for all the stars from their \textit{unWISE} $W3$ and $W4$ images. A detailed description of these procedures is discussed in \S~\ref{sec:unwise_rejectmethod}. 
+    In short, we aimed to identify point source contamination by rejecting stars with significant $W3$ to $W4$ relative centroid offsets ($\Delta r_{W3,W4} = \left|\vec{r}_{_{W3}} - \vec{r}_{_{W4}}\right|$), as well as identify and reject stars contaminated from extend source emission from their $W4$ to wide-$W4$ centroid offsets ($\Delta r_{W4} = \left|\vec{r}_{_{W4}} - \vec{r}_{_{W4},_{wide}}\right|$). For this analysis, we extracted centroids for all the stars from their \textit{unWISE} $W3$ and $W4$ images. A detailed description of these procedures is discussed in \S~\ref{sec:unwise_rejectmethod}. 
     
-    We looked for contaminated sources by identifying stars with the largest statistically significant offsets with respect to the distribution of offsets created from the parent sample of stars. The density clouds in Figures~\ref{fig:unwise_w3w4} and \ref{fig:unwise_w4w4} show the distributions of 15304 stars from our $W3-W4$ parent sample, prior to applying the filters we placed in \S~2 of Chapter~\ref{chap:iddisks}. The plots show the distribution of our stars' $W4$ SNRs as a function of the $W3$ to $W4$ relative centroid offsets ($\Delta r_{W3,W4}$) as well as a function of the $W4$ to wide-$W4$ centroid offsets ($\Delta r_{W4}$). Low $W4$ SNR stars will be affected more by small scale variations in the background, and hence the scatter of offsets at lower SNRs will shift toward higher separations, while the opposite effect will occur for stars at higher SNRs. Thus, a natural upper envelope to the distribution arises, and stars above that envelope will be rejected. 
+    We looked for contaminated sources by identifying stars with statistically significant offsets. The density clouds in Figures~\ref{fig:unwise_w3w4} and \ref{fig:unwise_w4w4} show the distributions of 15304 stars from our $W3-W4$ parent sample, prior to applying the filters we placed in \S~2.2.1 of Chapter~\ref{chap:iddisks}. The plots show the distribution of our stars' $W4$ SNRs as a function of the $W3$ to $W4$ relative centroid offsets ($\Delta r_{W3,W4}$) as well as a function of the $W4$ to wide-$W4$ centroid offsets ($\Delta r_{W4}$). Low $W4$ SNR stars will be larely affected by small scale background variations, thus shifting the distribution at lower SNRs toward larger separations, while the opposite effect will occur for stars at higher SNRs. Thus, a natural upper envelope to the distribution arises, where stars above that envelope will be rejected. 
     
     %=============================================================
     % unWISE W3/W4
@@ -54,22 +55,22 @@
     \end{figure}
     %=============================================================
     
-    The upper envelopes in both distributions were calculated by fitting an exponential curve to the $\Delta r_{j,max}$ points in log-log space, and using the same techniques outlined in \S~\ref{sec:unwise_rejectmethod} to calculate $\Delta r_{j,max}$. We also kept the same fixed 1/3~pixel lower limit for both analyses. In other words, stars are not rejected below this separation. The red points in Figures~\ref{fig:unwise_w3w4} and \ref{fig:unwise_w4w4} show stars from the parent sample that are likely contaminated by blended point sources or extended emission. Two hundred and twenty stars were rejected from the $\Delta r_{W3,W4}$ vs. $W4$ SNR analysis, and 738 stars were rejected from the $\Delta r_{W4}$ vs. $W4$ SNR analysis. The union of these two sets show that a total of 919 stars should be rejected, though only 897 stars from our filtered parent sample match the astrometric outliers. Out of the 897 rejected stars, 174 reside in the galactic plane, leaving 592 galactic plane stars in our parent sample. Our final $W3-W4$ parent sample is comprised of 14302 main-sequence \hip\ stars with well behaved $W3$ and $W4$ photometry. 
+    The upper envelopes in both distributions were calculated by fitting an exponential curve to the $\Delta r_{j,max}$ points in log-log space, and using the same techniques outlined in \S~\ref{sec:unwise_rejectmethod} to calculate $\Delta r_{j,max}$. We also kept the same fixed 1/3~pixel lower limit for both analyses. In other words, stars are not rejected below this separation. The red points in Figures~\ref{fig:unwise_w3w4} and \ref{fig:unwise_w4w4} show stars from the parent sample that are likely contaminated by blended point sources or extended emission. Two hundred and twenty stars were rejected from the $\Delta r_{W3,W4}$ vs. $W4$ SNR analysis, and 738 stars were rejected from the $\Delta r_{W4}$ vs. $W4$ SNR analysis. The union of these two sets show that a total of 919 stars should be rejected, though only 897 stars from our filtered parent sample match the astrometric outliers. Out of the 897 rejected stars, 174 reside in the galactic plane, leaving 592 galactic plane stars in our parent sample. Our final $W3-W4$ parent sample is comprised of 14302 main-sequence \hip\ stars with well behaved $W3$ and $W4$ photometry.
     
-    The 897 rejected stars account for 6.27\% of the original parent sample. Based on our assumptions, the photometry of all these stars must be contaminated by either extended emission or a blended point source. Though it is difficult to verify this claim, we show in the following section that the distribution excess significances are much better behaved after removing these stars, implying to some extent that our analysis is doing a good job of cleaning the parent sample of stars. 
+    The 897 rejected stars account for 6.27\% of the original parent sample. Based on our assumptions, the photometry of all these stars must be contaminated by either extended emission or a blended point source. Though it is difficult to verify this claim, we show in the following section that the distribution of excess significances are much better behaved after removing these stars, implying to some extent that our analysis is doing a good job of cleaning the parent sample of stars.
     
 
 \section{IR Excess Identification}
 
-    Our excesses are selected using the same procedures described in \citet{Patel2014} and the improved methods for identifying single-color excesses in \S~\ref{sec:improved_detection}. We use Equation~\ref{eq:old_sig}, to determine the significance of the color excess for each star. Since we only wish to identify excesses with $W3-W4$ colors only, the excess significance takes on the form of
+    Our excesses are selected using the same procedures described in \S~2.5 in Chapter~\ref{chap:iddisks} and the improved methods for identifying single-color excesses in \S~\ref{sec:improved_detection}. We use Equation~\ref{eq:old_sig}, to determine the significance of the color excess for each star. Since we only wish to identify excesses with $W3-W4$ colors only, the excess significance takes on the form of
     
     \begin{equation}\label{eq:excess_sig_w3-w4}
     \Sigma_{E[W3-W4]} = \frac{W3-W4-W_{34}(B_T-V_T)}{\sigma_{34}},
     \end{equation}
 
-    \noindent where $W_{34}(B_T-V_T)$ is the empirically derived $W3-W4$ photospheric colors, and $\sigma{34}$ is the total error term which includes the photometric and photospheric uncertainties. Both of these quantities are derived in \S~\textbf{XXX} in Chapter~\ref{chap:iddisks}. 
+    \noindent where $W_{34}(B_T-V_T)$ is the empirically derived $W3-W4$ photospheric colors, and $\sigma_{34}$ is the total error term which includes the photometric and photospheric uncertainties. Both of these quantities are derived in \S~ in Chapter~\ref{chap:iddisks}. 
     
-    Figure~\ref{fig:sige_w3-w4} shows the distribution of $\Sigma_{E[W3-W4]}$ for our parent sample of stars. We selected excesses such that their $\Sigma_{E[W3-W4]} \geq \Sigma_{E[W3-W4]_{99.5}}$. $\Sigma_{E[W3-W4]_{99.5}}$ is our 99.5\% confidence threshold, beyond which 0.5\% of stars are false-positive detections. In other words, our analysis is set to identify excesses up to a 99.5\% false-discovery rate (FDR). $\Sigma_{E[W3-W4]_{99.5}}$ was calculated using the same procedures that we describe in \S~\textbf{XXX}. For this analysis, we determined $\Sigma_{E[W3-W4]_{CL}}=2.894$, and is marked as the dotted black line n Figure~\ref{fig:sige_w3-w4}. 
+    Figure~\ref{fig:sige_w3-w4} shows the distribution of $\Sigma_{E[W3-W4]}$ for our parent sample of stars. We selected excesses such that their $\Sigma_{E[W3-W4]} \geq \Sigma_{E[W3-W4]_{99.5}}$. $\Sigma_{E[W3-W4]_{99.5}}$ is our 99.5\% confidence threshold, beyond which 0.5\% of stars are false-positive detections. In other words, our analysis is set to identify excesses up to a 99.5\% false-discovery rate (FDR). $\Sigma_{E[W3-W4]_{99.5}}$ was calculated using the same procedures that we describe in \S~\ref{sec:single_color_stuff}. For this analysis, we determined $\Sigma_{E[W3-W4]_{CL}}=2.894$, and is marked as the dotted black line n Figure~\ref{fig:sige_w3-w4}. 
 
     %=============================================================
     %  Color Distribution
@@ -77,22 +78,20 @@
     \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Ch5/W3-W4_colordist_removedunwisestars_galplane}
-    \caption[Distribution of $\Sigma_{E[W3-W4]}$ in 120~pc]{}
+    \caption[Distribution of $\Sigma_{E[W3-W4]}$ in 120~pc]{Distribution of $\Sigma_{E[W3-W4]}$ for all our stars in the parent sample (solid red histogram). The blue dashed histogram is the uncertainty distribution, created by reflecting all the values of $\Sigma_{E[W3-W4]}<0$ about the mode of the red distribution. Excesses are selected to the right of our FDR threshold of 0.5\% ($\Sigma_{E[W3-W4]_{99.5}}$), denoted by the vertical dashed green line. This threshold was set at a 99.5\% confidence level. The inset shows a semi-log fit of a line to the last ten points in the reverse cumulative distribution function of the uncertainties. The fit smoothes over the stochasticity in this sparely populated region of the uncertainty distribution to attain a more accurate estimate of the FDR threshold.}
     \label{fig:sige_w3-w4}
     \end{figure}
     %=============================================================
 
-    Our selection process identified 640 stars with significant $W4$ excesses. Out of the 640, we expect 3.2 (=640$\times$0.5\%) of our excesses to be spurious false-positives. In addition, we still need to remove excesses which may be contaminated from interstellar cirrus clouds. Our astrometric offset rejection in \S~\ref{sec:unwise_reject} does not guarantee rejection of all such contaminated stars, as large patches of extended interstellar cirrus may appear as uniform back emission to our centroiding algorithm. Thus, we visually inspected the four band \WS\ Atlas images and removed 119 sources that appear to be contaminated from interstellar cirrus. Since we are using a subset of the parent sample from \citet{Patel2014}, contaminated excesses we rejected in that study appear in this one as well. Therefore, we list all the rejected sources in Table~\textbf{XXX}, except for those which we listed in previous studies. 
+    Our selection process identified 640 stars with significant $W4$ excesses. Out of the 640, we expect 3.2 (=640$\times$0.5\%) of our excesses to be spurious false-positives. In addition, we still need to remove excesses which may be contaminated from interstellar cirrus clouds. Our astrometric offset rejection in \S~\ref{sec:unwise_reject} does not guarantee rejection of all such contaminated stars, as large patches of extended interstellar cirrus may appear as uniform background emission to our centroiding algorithm. Thus, we visually inspected the four band \WS\ Atlas images and removed 119 sources that appear to be contaminated from interstellar cirrus. Since we are using a subset of the parent sample from \citet{Patel2014}, contaminated excesses we rejected in that study appear in this one as well. Therefore, we list the rejected sources in Table~\textbf{XXX}, excluding those which we listed in Chapters~\ref{chap:iddisks} and \ref{chap:confirm}. 
     
-    In total, we identified 522 significant $W3-W4$ excesses out to 120~pc. Out of these, 210 were identified by our previous two studies in Chapter~\ref{chap:iddisks} and \textbf{xxx}. This leaves 312 stars for which we have not previously reported an excess from our past studies.
+    In total, we identified 522 significant $W3-W4$ excesses out to 120~pc. Out of these, 210 were identified by our previous two studies in Chapter~\ref{chap:iddisks} and \ref{chap:confirm}. This leaves 312 stars for which we have not previously reported an excess from our past studies.
     
     \section{Results}
     
-    From the 522 debris disks we identified in this study, 16 reside within the galactic plane $|b|<5^{\circ}$. \textbf{Need to write somethign else about this. Come back to it later}.
+    From the 522 debris disks we identified in this study, 16 reside within the galactic plane $|b|<5^{\circ}$. Out of the 312 $W4$ excesses that we had not identified in our previous studies, 225 stars are new 22\micron\ excesses, previously unreported in the literature. Of these, 222 stars do not have previous detection of an excess at any wavelength in the literature. In addition, eight of our new excesses reside within 75~pc. Hence, we are also detecting new excesses within a volume which we had previously searched. 
     
-    Out of the 312 $W4$ excesses that we had not identified in our previous studies, 225 stars are new 22\micron\ excesses, previously unreported in the literature. Of these, 222 stars do not have previous detection of an excess at any wavelength in the literature. In addition, eight of our new excesses reside within 75~pc. Hence, we are also detecting new excesses within a volume which we had previously searched. 
-    
-    We also determined the stellar and dust properties of the 522 excess stars, which are listed in Table~\textbf{XXX} and \textbf{XXX}, respectively. We performed the same analysis as in \S~\textbf{XXX} in Chapter~\textbf{XXX} to derive these parameters by performing photospheric model fits. We used NextGen grid models from \citet{Hauschildt1999} to fit the optical and near-IR photometry from \hip\ and \mass. In a similar manner to that described in \S~\textbf{XXX}, we scaled the derived photospheric model to the mean of the $W1$, and $W2$ photometry. We used the $W4$ excess flux and $W3$ or 3$\sigma$ upper limit to the $W3$ excess flux to determine the best fit blackbody temperature for the dust emission. We have also placed upper limits to all of our dust temperature estimates using the 3$\sigma$ upper limit to the $W3$ excess flux. This allows us to constrain the dust properties to some extent, since we do not have longer wavelength information for all of our stars. Without this information it is difficult to ascertain whether the dust is emitting from warm grains, or whether the excess we measure is the Wien emission of much colder dust. 
+    We also determined the stellar and dust properties of the 522 excess stars, which are listed in Table~\textbf{XXX} and \textbf{XXX}, respectively. We performed the same analysis as in \S~\ref{sec:results} to derive these parameters by performing photospheric model fits. We used NextGen grid models from \citet{Hauschildt1999} to fit the optical and near-IR photometry from \hip\ and \mass. We scaled the derived photospheric model to the mean of the $W1$, and $W2$ photometry. We used the $W4$ excess flux and $W3$ or 3$\sigma$ upper limit to the $W3$ excess flux to determine the best fit blackbody temperature for the dust emission. We have also placed upper limits to all of our dust temperature estimates using the 3$\sigma$ upper limit to the $W3$ excess flux. This allows us to constrain the dust properties to some extent, since we do not have longer wavelength information for all of our stars. Without this information it is difficult to ascertain whether the dust is emitting from warm grains, or whether the excess we measure is the Wien emission of much colder dust. 
     
    % Reuslts:
   %  - # of excesses
@@ -112,75 +111,87 @@
 
     \subsection{Survey Sensitivity}
     
-    A goal of this study was to identify faint warm debris disks with \WS, though our detections need to be placed in context to literature excesses. We cannot characterize the full extent of the disk brightness $f_d$ (Equation~\ref{eq:fd}) since we only have excess flux information at $W3$ and $W4$. However, compare the relative flux at $W4$ ($R_{22}$; Equation~\ref{eq:rel_excess}) of the candidate debris disk hosts from our survey to the relative flux of disks detected at similar wavelengths. Although it would make sense to compare the relative flux of our disks at 22\micron\ to those detected by \iras\ at 25\micron, the latter sample is rather small given that the majority of \iras\ disks were detected in the far-IR. 
+    A goal of this study was to identify faint warm debris disks with \WS, though our detections need to be placed in context to literature excesses. We cannot characterize the full extent of the disk brightness $f_d$ (Equation~\ref{eq:fd}) since we only have excess flux information at $W3$ and $W4$. However, we compare the relative flux at $W4$ ($R_{22}$; Equation~\ref{eq:rel_excess}) of the candidate debris disk hosts from our survey to the relative flux of disks detected at similar wavelengths. Although it would make sense to compare the relative flux of our disks at 22\micron\ to those detected by \iras\ at 25\micron, the latter sample is rather small given that the majority of \iras\ disks were detected in the far-IR. 
     
-    Instead, we compare the relative flux at $W4$ for our excesses, to those excesses detected from the \spitzer at 24\micron\ using MIPS. \citet{Chen2014} conducted a study to characterize the excess SEDs of 571 stars with archival \textit{Spitzer}/IRS observations, supplemented with data from observations using \spitzer/MIPS at 24\micron. In addition, \citet{Lawler2009} conducted a survey to detected
-    
-    
-    
-     search for bona-fide excesses --- in large part due to the numerous filters we placed to cleanse our dataset of false-positives and  --- 
-
-    importance to solar system.
-
-
     %=============================================================
     %  WISE Excess Sensitivity
     %=============================================================
     \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Ch5/relflux_wise_mips_irs_120pc}
-    \caption[WISE Disk Sensitivity]{}
+    \includegraphics[width=0.85\textwidth]{Ch5/relflux_wise_mips_irs_120pc}
+    \caption[Our Survey Flux Sensitivity]{The relative fluxes plotted as a function of their \mass\ $K_s$ magnitudes. The relative fluxes are plotted for our \WS\ excesses from Chapters~\ref{chap:iddisks}, \ref{chap:confirm}, and this study, in addition to stars with 24\micron\ excesses from \citet{Chen2014}, and 32\micron\ \spitzer/IRS excesses from \citet{Lawler2009}. The entire figure extends beyond what is shown. The current limits are set to illustrate the sensitivity limits of each survey.}
     \label{fig:wise_relflux}
     \end{figure}
     %=============================================================
-
-
-
+    
+    
+    Instead, we compare the relative flux at $W4$ for our excesses, to those excesses detected from the \spitzer at 24\micron\ using MIPS. \citet{Chen2014} conducted a study to characterize the excess SEDs of 571 stars with archival \textit{Spitzer}/IRS observations, supplemented with data from observations using \spitzer/MIPS at 24\micron. In addition, \citet{Lawler2009} conducted an unbiased survey to detect Zodiacal light emission from 152 solar type stars in both the \spitzer/IRS short (8.5--12\micron) and long (30--34\micron) bands. We test our sensitivity limits in context to these two surveys: using the relative 24\micron\ flux from \citet{Chen2014} and the relative 32\micron\ flux from \citet{Lawler2009}.
+    
+    
+    
+    Figure~\ref{fig:wise_relflux} shows the relative fluxes of the excesses detected from our surveys at 22\micron, excesses with \spitzer/MIPS24 measurements from \citet{Chen2014}, and excesses from \citet{Lawler2009} at 32\micron --- all of them as a function of \mass\ $K_s$ magnitude. What is easily evident is that the \spitzer\ surveys are sensitive to fainter mid-IR excesses compared to \WS. This does not come as a surprise, because \spitzer\ is a pointed telescope. The \spitzer/IRS survey detected dust at 2\% fainter levels compared to the \spitzer/MIPS survey (4\% and 6\% above the photosphere, respectively), mainly because the short wavelength end of the IRS spectra can be used to calibrate the photospheric flux, and use the contemporaneously obtained longer wavelength flux to measure the photospheric flux. 
+    
+    Our \WS\ excesses, on the other hand, our survey seems to find excesses down to about 9\% of the photospheric emission. This is also of course only for the brightest stars. At fainter stellar magnitudes, the detection sensitivity increases. This is mainly due to the fact that \WS\ is a flux limited survey, and for fainter stars, the photometric uncertainties increase, thereby decreasing the IR excess signal. Thus, this plot tells us that though we are relatively close, we do not do as well as past pointed surveys. 
 
     %=============================================================
     % My WISE vs. Their WISE
     %=============================================================
     \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Ch5/wise_vs_wu_120pc}
-    \caption[My WISE Disks vs. Other WISE Disks]{}
+    \includegraphics[width=.9\textwidth]{Ch5/wise_vs_wu_120pc}
+    \caption[My \WS\ Disks vs. Other \WS\ Disks]{Plot of the $B_T-V_T$ colors as a function of the $W3-W4$ color excess ($E[W3-W4]$), for all previously unreported \WS\ $W4$ excesses from our survey, the \WS\ survey by \citet{Vican2014}, and the \WS\ survey by \citet{Wu2013}. The top and right panels show the marginalized distributions of both parameters for all three sets of stars.}
     \label{fig:wise_v_wise}
     \end{figure}
     %=============================================================
     
+    However, another picture arises, when comparing our survey to those conducted by others using data from \WS. In Figure~\ref{fig:wise_v_wise}, I plot the $B_T-V_T$ color for the 312 disk candidates we identified from this survey alone, as a function of their $W3-W4$ color excess. In addition, I plot the same parameters for stars that passed our selection criteria, and that were detected by \citet{Vican2014} and \citet{Wu2013}. The division in $B_T-V_T$ between these two surveys is inherent to each, as \citet{Vican2014} searched for excesses around late F to K stars, while \citet{Wu2013} was sensitive to excesses around bright stars A -- F stars. 
     
-    
-
-    
-    
-    \subsection{Overall Expansion of Disk Census}
+    What is evident is that the excesses we detect are larger in number, and are detected at fainter levels compared to the other surveys. We cannot rely on the survey results from \citet{Vican2014}, as a number of their stars show negative color excesses or small excesses such that their $\Sigma_{E[W3-W4]}$ are less than our $\Sigma_{E[W3-W4]_{99.5}}$ threshold. These account for $\sim$64\% of the total number of stars in their sample. These excesses were detected by subtracting the photospheric flux after fitting near-IR and optical data to grid models. As we have discussed before, this introduces biases in measuring the excess, and introduces false-positives into the survey. In contrast, our survey is complementary, though larger in scope, to \citet{Wu2013}, as they are preferentially sensitive to brighter excesses. 
 
     %=============================================================
     %  120 pc incidence rates
     %=============================================================
     \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Ch5/incidencerates_120pc}
-    \caption[Incidence of Excesses]{}
+    \includegraphics[width=0.8\textwidth]{Ch5/incidencerates_120pc}
+    \caption[Incidence of Excesses]{Fraction of \WS\ $W4$ excesses detected as a function of spectral type in different distance volumes.}
     \label{fig:incidence_rates}
     \end{figure}
     %=============================================================
-    
-    
-    
+ 
     %=============================================================
     % WISE vs. Literature
     %=============================================================
     \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Ch5/wise_lit_120pc}
-    \caption[Comparison of All Known Debris Disks To Those Detected by \WS]{}
+    \caption[Comparison of All Known Debris Disks To Those Detected by \WS]{$B_T-V_T$ colors as a function of distance for all new $W4$ excesses from our three studies, along with debris disks detected at any wavelength in the literature. Marginalized distributions are also plotted on the top and right for each parameter. The grey shaded areas indicate the regions of the parameter space that our surveys do not explore.}
     \label{fig:wise_v_lit}
     \end{figure}
     %=============================================================
+    \subsection{Overall Expansion of Disk Census}
+
+    With our large sample size, we can robustly determine the incidence rate of 22\micron\ excesses for a given spectral type. Figure~\ref{fig:incidence_rates} shows the incidence rate of our excesses, as a function of $B_T-V_T$ (spectral type), plotted alongside 1$\sigma$ error bars. We show three different curves, corresponding to the incidence rates for three different volumes, from which we conclude that there does not seem to be any statistically significant deviation as a function of distance. We report a 15--25\% incidence rate of $W4$ excesses for B and A stars, and a 1--4\% incidence for solar type stars (corresponding to an average of 19.0\% and 1.7\%, respectively).
 
 
     
+    What is even more interesting is how this incidence translates into a total census of disks based on expanding our search to a larger volume. In Figure~\ref{fig:wise_v_lit}, we plot the $B_T-V_T$ of our new \WS\ disks alongside those found in literature (detected at any wavelength) as a function of their distances. The collapsed distance distribution are independent of each other. At distances $<$75~pc, there are clearly a greater number of disks which have been found by other surveys, though our past studies have contributed significantly to the census in this volume. By expanding to 120~pc, we see that within this full volume, we have increased the census of disks by 40\%. However, if we only take the volume of space between 75 and 120~pc, we see that our surveys have increased the census of debris disks by 130\%. 
+   
+
+
+    \subsection{Excesses at False-Discovery Rates $>$ 99.5\%}
+    
+    We select excesses above $\Sigma_{E[W3-W4]_{34}}$, such that 99.5\% of our stars are bona-fide IR excesses, and not caused by a statistical fluke. However, below this threshold, there are still a non-zero number of bona-fide excesses, at least until the FDR=100\%. The problem is that one cannot lay claim that any particular star below the 99.5\% FDR is a bona-fide excess, give the high rate of contamination. What we can ascertain is how many bona-fide excesses exist below $\Sigma_{E[W3-W4]_{34}}$, by calculating the false omission rate (FOR). The FOR is defined as the number of stars in the uncertainty distribution below $\Sigma_{E[W3-W4]_{34}}$ over the number of stars in the full $\Sigma_E$ distribution below $\Sigma_{E[W3-W4]_{34}}$, but greater than 0. For this study, the FOR = 89.2\%. In other words, 10.8\% of the stars below our threshold, but with $\Sigma_{E[W3-W4]}>0$ are potential bona-fide excesses. In other words, we are insensitive to potentially 724 bona-fide $W4$ excesses, simply due to the width of the uncertainty distribution. 
     
     
+\section{Conclusion}
+    
+    \begin{itemize}
+    \item W3-W4 excesses searched out to 120pc and gal plane at 99.5\% confidence
+    \item Summary of detections (total stars) and increase of disks (130\%)
+    \item Sensitivity level of our survey
+    \end{itemize}
    % - visually rejected stars -- more are removed than need be
+   
+   
+\input{Ch5/reject_120pc.tex}
